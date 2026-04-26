@@ -78,6 +78,54 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
     setVisibleCount(PAGE_SIZE);
   }, [query, activeCategory, authOnly, sort]);
 
+  // Keyboard navigation across cards
+  const gridRef = React.useRef<HTMLDivElement>(null);
+  const searchRef = React.useRef<HTMLInputElement>(null);
+
+  React.useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const tag = target?.tagName;
+      const isTyping = tag === "INPUT" || tag === "TEXTAREA" || target?.isContentEditable;
+
+      // "/" focuses search from anywhere
+      if (e.key === "/" && !isTyping && !e.metaKey && !e.ctrlKey) {
+        e.preventDefault();
+        searchRef.current?.focus();
+        searchRef.current?.select();
+        return;
+      }
+
+      if (isTyping) return;
+      if (!gridRef.current) return;
+
+      const cards = Array.from(
+        gridRef.current.querySelectorAll<HTMLAnchorElement>("a[data-card]")
+      );
+      if (cards.length === 0) return;
+
+      const active = document.activeElement as HTMLElement | null;
+      const idx = cards.findIndex((c) => c === active);
+      const cols = getColumnCount(gridRef.current);
+
+      let next = -1;
+      if (e.key === "ArrowRight") next = idx < 0 ? 0 : Math.min(idx + 1, cards.length - 1);
+      else if (e.key === "ArrowLeft") next = idx < 0 ? 0 : Math.max(idx - 1, 0);
+      else if (e.key === "ArrowDown") next = idx < 0 ? 0 : Math.min(idx + cols, cards.length - 1);
+      else if (e.key === "ArrowUp") next = idx < 0 ? 0 : Math.max(idx - cols, 0);
+      else if (e.key === "Home") next = 0;
+      else if (e.key === "End") next = cards.length - 1;
+      else return;
+
+      e.preventDefault();
+      cards[next]?.focus();
+      cards[next]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    };
+
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   const categories = React.useMemo(() => {
     return (Object.keys(categoryCounts) as ServerCategory[])
       .filter((c) => c !== "official")
@@ -92,12 +140,16 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
         <div className="relative flex-1 max-w-xl">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-fg-subtle pointer-events-none" />
           <input
+            ref={searchRef}
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Filter servers by name, tag, or author…"
-            className="w-full h-10 rounded-md border border-border bg-bg-subtle pl-9 pr-3 text-sm placeholder:text-fg-subtle focus:bg-bg focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all"
+            placeholder="Filter servers by name, tag, or author…  ( / )"
+            className="w-full h-10 rounded-md border border-border bg-bg-subtle pl-9 pr-12 text-sm placeholder:text-fg-subtle focus:bg-bg focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all"
           />
+          <kbd className="hidden sm:inline-flex absolute right-3 top-1/2 -translate-y-1/2 items-center rounded border border-border bg-bg-muted px-1.5 py-0.5 text-[10px] font-mono text-fg-subtle pointer-events-none">
+            /
+          </kbd>
           {query && (
             <button
               type="button"
@@ -170,28 +222,44 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
         </div>
       ) : (
         <>
-          <div className="text-[11px] text-fg-subtle font-mono flex items-center gap-3">
-            <span>
-              {filtered.length} server{filtered.length === 1 ? "" : "s"}
-              {filtered.length > visibleCount && (
-                <span className="text-fg-muted"> · showing {visibleCount}</span>
+          <div className="text-[11px] text-fg-subtle font-mono flex items-center justify-between gap-3 flex-wrap">
+            <div className="flex items-center gap-3">
+              <span>
+                {filtered.length} server{filtered.length === 1 ? "" : "s"}
+                {filtered.length > visibleCount && (
+                  <span className="text-fg-muted"> · showing {visibleCount}</span>
+                )}
+              </span>
+              {hasFilters && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setQuery("");
+                    setActiveCategory("all");
+                    setAuthOnly("all");
+                  }}
+                  className="text-accent hover:underline"
+                >
+                  clear filters
+                </button>
               )}
-            </span>
-            {hasFilters && (
-              <button
-                type="button"
-                onClick={() => {
-                  setQuery("");
-                  setActiveCategory("all");
-                  setAuthOnly("all");
-                }}
-                className="text-accent hover:underline"
-              >
-                clear filters
-              </button>
-            )}
+            </div>
+            <div className="hidden md:flex items-center gap-3 text-fg-subtle">
+              <span className="inline-flex items-center gap-1">
+                <kbd className="rounded border border-border bg-bg-muted px-1 py-0.5 font-mono text-[10px]">↑↓→←</kbd>
+                <span>navigate</span>
+              </span>
+              <span className="inline-flex items-center gap-1">
+                <kbd className="rounded border border-border bg-bg-muted px-1 py-0.5 font-mono text-[10px]">↵</kbd>
+                <span>open</span>
+              </span>
+              <span className="inline-flex items-center gap-1">
+                <kbd className="rounded border border-border bg-bg-muted px-1 py-0.5 font-mono text-[10px]">/</kbd>
+                <span>filter</span>
+              </span>
+            </div>
           </div>
-          <div className="stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div ref={gridRef} className="stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.slice(0, visibleCount).map((s) => (
               <ServerCard key={s.slug} server={s} />
             ))}
@@ -213,6 +281,12 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
       )}
     </div>
   );
+}
+
+function getColumnCount(el: HTMLElement): number {
+  const styles = window.getComputedStyle(el);
+  const cols = styles.gridTemplateColumns.split(" ").length;
+  return cols || 1;
 }
 
 function CategoryChip({

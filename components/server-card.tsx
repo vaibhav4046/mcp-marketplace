@@ -16,8 +16,10 @@ export function ServerCard({ server, className, variant = "default" }: Props) {
   return (
     <Link
       href={`/server/${server.slug}`}
+      data-card
       className={cn(
         "group relative flex flex-col rounded-xl border border-border bg-bg-subtle p-4 card-glow tap-scale",
+        "focus:border-accent focus:bg-bg focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
         isFeatured && "p-5",
         className
       )}
