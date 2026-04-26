@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { CommandPaletteProvider } from "@/components/command-palette";
 import { Header } from "@/components/header";
-import { getAllServers } from "@/lib/data";
+import { getSearchableServers } from "@/lib/data";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,12 +33,24 @@ export const metadata: Metadata = {
     description:
       "Browse, search, and install MCP servers. Auto-synced from upstream registries.",
     siteName: "MCP Marketplace",
+    images: [{ url: "/icon-512.png", width: 512, height: 512, alt: "MCP Marketplace" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "MCP Marketplace",
     description: "Browse and install Model Context Protocol servers.",
+    images: ["/icon-512.png"],
   },
+  icons: {
+    icon: [
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/icon-32.png",
+  },
+  manifest: "/manifest.webmanifest",
   robots: { index: true, follow: true },
 };
 
@@ -56,7 +68,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const servers = getAllServers();
+  const servers = getSearchableServers();
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-bg text-fg">
@@ -78,9 +90,7 @@ function Footer() {
       <div className="container py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <div className="h-6 w-6 rounded bg-gradient-to-br from-accent to-[hsl(180,80%,60%)] grid place-items-center text-[10px] font-bold text-accent-fg">
-              M
-            </div>
+            <img src="/logo.svg" alt="" width={24} height={24} className="rounded" />
             <span className="font-semibold text-sm">MCP Marketplace</span>
           </div>
           <p className="text-fg-muted leading-relaxed max-w-xs">
@@ -114,6 +124,9 @@ function Footer() {
               <a className="hover:text-fg" href="https://github.com/vaibhav4046/mcp-marketplace" target="_blank" rel="noopener noreferrer">
                 Source on GitHub
               </a>
+            </li>
+            <li>
+              <a className="hover:text-fg" href="/deploy">Deploy your MCP</a>
             </li>
             <li>
               <a className="hover:text-fg" href="/submit">Submit a server</a>

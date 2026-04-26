@@ -7,20 +7,21 @@ import type { MCPServer, ServerCategory } from "@/lib/types";
 import { CATEGORY_LABELS } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { ServerCard } from "./server-card";
-import { Badge } from "./ui/badge";
 
 interface Props {
   servers: MCPServer[];
   categoryCounts: Record<string, number>;
 }
 
-type SortKey = "stars" | "recent" | "alpha";
+type SortKey = "popular" | "recent" | "alpha";
+const PAGE_SIZE = 60;
 
 export function ServerGrid({ servers, categoryCounts }: Props) {
   const [query, setQuery] = React.useState("");
   const [activeCategory, setActiveCategory] = React.useState<ServerCategory | "all">("all");
   const [authOnly, setAuthOnly] = React.useState<"all" | "no-auth" | "auth">("all");
-  const [sort, setSort] = React.useState<SortKey>("stars");
+  const [sort, setSort] = React.useState<SortKey>("popular");
+  const [visibleCount, setVisibleCount] = React.useState(PAGE_SIZE);
 
   const fuse = React.useMemo(
     () =>
@@ -51,7 +52,16 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
     if (authOnly === "no-auth") list = list.filter((s) => !s.authRequired);
 
     list.sort((a, b) => {
-      if (sort === "stars") return (b.stars ?? 0) - (a.stars ?? 0);
+      if (sort === "popular") {
+        // Official → verified → has tools → stars
+        const oa = a.official ? 4 : a.verified ? 2 : 0;
+        const ob = b.official ? 4 : b.verified ? 2 : 0;
+        if (ob !== oa) return ob - oa;
+        const ta = a.tools?.length || 0;
+        const tb = b.tools?.length || 0;
+        if (tb !== ta) return tb - ta;
+        return (b.stars ?? 0) - (a.stars ?? 0);
+      }
       if (sort === "recent") {
         const ta = new Date(a.lastUpdated || a.addedAt || 0).getTime();
         const tb = new Date(b.lastUpdated || b.addedAt || 0).getTime();
@@ -62,6 +72,11 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
 
     return list;
   }, [servers, fuse, query, activeCategory, authOnly, sort]);
+
+  // Reset pagination on filter change
+  React.useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [query, activeCategory, authOnly, sort]);
 
   const categories = React.useMemo(() => {
     return (Object.keys(categoryCounts) as ServerCategory[])
@@ -107,7 +122,7 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
           />
           <SegmentedControl
             options={[
-              { v: "stars", l: "Popular" },
+              { v: "popular", l: "Popular" },
               { v: "recent", l: "Recent" },
               { v: "alpha", l: "A–Z" },
             ]}
@@ -155,8 +170,13 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
         </div>
       ) : (
         <>
-          <div className="text-[11px] text-fg-subtle font-mono">
-            {filtered.length} server{filtered.length === 1 ? "" : "s"}
+          <div className="text-[11px] text-fg-subtle font-mono flex items-center gap-3">
+            <span>
+              {filtered.length} server{filtered.length === 1 ? "" : "s"}
+              {filtered.length > visibleCount && (
+                <span className="text-fg-muted"> · showing {visibleCount}</span>
+              )}
+            </span>
             {hasFilters && (
               <button
                 type="button"
@@ -165,17 +185,30 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
                   setActiveCategory("all");
                   setAuthOnly("all");
                 }}
-                className="ml-3 text-accent hover:underline"
+                className="text-accent hover:underline"
               >
                 clear filters
               </button>
             )}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filtered.map((s) => (
+            {filtered.slice(0, visibleCount).map((s) => (
               <ServerCard key={s.slug} server={s} />
             ))}
           </div>
+          {filtered.length > visibleCount && (
+            <div className="flex justify-center pt-2">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                className="inline-flex items-center gap-2 h-9 px-5 rounded-md border border-border-strong bg-bg-subtle text-fg hover:bg-bg-muted transition-colors text-xs font-medium"
+              >
+                Load {Math.min(PAGE_SIZE, filtered.length - visibleCount)} more
+                <span className="text-fg-subtle">·</span>
+                <span className="text-fg-subtle">{filtered.length - visibleCount} hidden</span>
+              </button>
+            </div>
+          )}
         </>
       )}
     </div>

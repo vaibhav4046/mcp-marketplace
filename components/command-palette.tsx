@@ -5,23 +5,19 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 import { Search, Command, ArrowRight, Star, ShieldCheck } from "lucide-react";
-import type { MCPServer } from "@/lib/types";
+import type { LiteServer } from "@/lib/data";
 import { cn, formatCount } from "@/lib/utils";
-
-interface Props {
-  servers?: MCPServer[];
-}
 
 const CommandPaletteContext = React.createContext<{
   open: () => void;
-  servers: MCPServer[];
+  servers: LiteServer[];
 } | null>(null);
 
 export function CommandPaletteProvider({
   servers,
   children,
 }: {
-  servers: MCPServer[];
+  servers: LiteServer[];
   children: React.ReactNode;
 }) {
   const [openState, setOpenState] = React.useState(false);
@@ -76,7 +72,7 @@ function CommandPalette({
   servers,
   onClose,
 }: {
-  servers: MCPServer[];
+  servers: LiteServer[];
   onClose: () => void;
 }) {
   const router = useRouter();
@@ -98,7 +94,6 @@ function CommandPalette({
           { name: "tags", weight: 1.5 },
           { name: "categories", weight: 1.2 },
           { name: "author", weight: 1 },
-          { name: "description", weight: 0.6 },
         ],
         threshold: 0.36,
         ignoreLocation: true,

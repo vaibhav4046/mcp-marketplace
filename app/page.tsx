@@ -107,7 +107,7 @@ function Hero({
           </h1>
 
           <p className="mt-5 text-base md:text-lg text-fg-muted leading-relaxed max-w-2xl text-balance">
-            Browse, search, and install Model Context Protocol servers for Claude Code, Claude Desktop, Cursor, and any MCP-aware client. One-click install snippets, tool-schema previews, and a daily-updated registry.
+            Browse and install <strong className="text-fg">{stats.total}+</strong> Model Context Protocol servers for Claude Code, Claude Desktop, Cursor, and any MCP-aware client. One-click install snippets, tool-schema previews, daily auto-sync — and a step-by-step path to deploy your own.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -117,6 +117,12 @@ function Hero({
             >
               Browse all servers
               <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/deploy"
+              className="inline-flex items-center gap-2 h-10 px-5 rounded-md border border-border-strong text-fg font-medium text-sm hover:bg-bg-muted transition-colors"
+            >
+              Deploy your own
             </Link>
             <a
               href="https://github.com/vaibhav4046/mcp-marketplace"

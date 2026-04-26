@@ -10,10 +10,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border glass">
       <div className="container flex h-14 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative h-7 w-7 rounded-md bg-gradient-to-br from-accent to-[hsl(180,80%,60%)] grid place-items-center text-accent-fg font-bold text-sm shadow-md shadow-accent/20">
-            <span className="font-mono">M</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <img
+            src="/logo.svg"
+            alt="MCP Marketplace logo"
+            width={32}
+            height={32}
+            className="rounded-md shadow-md shadow-accent/20 transition-transform group-hover:scale-105"
+          />
           <div className="flex flex-col leading-none">
             <span className="text-sm font-semibold tracking-tight">
               MCP <span className="text-fg-muted font-normal">Marketplace</span>
@@ -27,6 +31,12 @@ export function Header() {
         <CommandPaletteTrigger />
 
         <div className="flex items-center gap-1">
+          <Link
+            href="/deploy"
+            className="hidden sm:inline-flex items-center gap-1.5 h-9 px-3 text-xs font-medium text-fg-muted hover:text-fg rounded-md hover:bg-bg-muted transition-colors"
+          >
+            Deploy yours
+          </Link>
           <Link
             href="/submit"
             className="hidden sm:inline-flex items-center gap-1.5 h-9 px-3 text-xs font-medium text-fg-muted hover:text-fg rounded-md hover:bg-bg-muted transition-colors"

@@ -62,6 +62,30 @@ export const getCategoriesWithCounts = cache(() => {
   return counts;
 });
 
+/**
+ * Lite server shape for the client-side command palette: keeps the
+ * payload tiny by stripping description, tools, install snippets, etc.
+ */
+export type LiteServer = Pick<
+  MCPServer,
+  "slug" | "name" | "tagline" | "author" | "authorGithub" | "stars" | "official" | "verified" | "categories" | "tags"
+>;
+
+export const getSearchableServers = cache((): LiteServer[] => {
+  return getAllServers().map((s) => ({
+    slug: s.slug,
+    name: s.name,
+    tagline: s.tagline,
+    author: s.author,
+    authorGithub: s.authorGithub,
+    stars: s.stars,
+    official: s.official,
+    verified: s.verified,
+    categories: s.categories,
+    tags: s.tags,
+  }));
+});
+
 export const getStats = cache(() => {
   const all = data.servers;
   return {
