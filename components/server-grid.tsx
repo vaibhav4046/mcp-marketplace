@@ -132,7 +132,7 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+      <div className="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
         <CategoryChip
           label="All"
           count={servers.length}
@@ -191,7 +191,7 @@ export function ServerGrid({ servers, categoryCounts }: Props) {
               </button>
             )}
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.slice(0, visibleCount).map((s) => (
               <ServerCard key={s.slug} server={s} />
             ))}
@@ -231,10 +231,10 @@ function CategoryChip({
       type="button"
       onClick={onClick}
       className={cn(
-        "shrink-0 inline-flex items-center gap-1.5 h-7 rounded-full px-3 text-[11px] font-medium transition-all border",
+        "shrink-0 inline-flex items-center gap-1.5 h-7 rounded-full px-3 text-[11px] font-medium transition-all border tap-scale",
         active
-          ? "bg-accent text-accent-fg border-accent shadow-sm shadow-accent/20"
-          : "bg-bg-subtle text-fg-muted border-border hover:bg-bg-muted hover:text-fg"
+          ? "bg-accent text-accent-fg border-accent shadow-md shadow-accent/30 scale-105"
+          : "bg-bg-subtle text-fg-muted border-border hover:bg-bg-muted hover:text-fg hover:border-accent/40"
       )}
     >
       {label}

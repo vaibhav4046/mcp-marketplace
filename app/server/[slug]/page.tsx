@@ -68,9 +68,9 @@ export default async function ServerDetailPage({
       </Link>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-        <div className="min-w-0">
+        <div className="min-w-0 animate-slide-up">
           {/* Header */}
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-3 sm:gap-4 mb-6">
             <div className="shrink-0">
               {avatar ? (
                 <img
@@ -88,7 +88,7 @@ export default async function ServerDetailPage({
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2 flex-wrap">
-                <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight break-words">
                   {server.name}
                 </h1>
                 {server.official && (
@@ -168,7 +168,7 @@ export default async function ServerDetailPage({
         </div>
 
         {/* Sidebar */}
-        <aside className="space-y-4">
+        <aside className="space-y-4 animate-slide-up" style={{ animationDelay: "120ms" }}>
           <Card className="p-4">
             <SidebarLabel>Source</SidebarLabel>
             <a

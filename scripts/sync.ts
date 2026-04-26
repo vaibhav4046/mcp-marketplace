@@ -186,8 +186,11 @@ function glamaToServer(g: GlamaServer): MCPServer | null {
   const author = g.namespace || extractGithubOwner(repo) || "Unknown";
   const authorGithub = g.namespace || extractGithubOwner(repo);
   const attrs = g.attributes || [];
-  const isOfficial = attrs.includes("author:official") || repo.includes("modelcontextprotocol/servers");
-  const isVerified = attrs.includes("verified") || isOfficial;
+  // "Official" = strictly Anthropic reference servers. Glama's
+  // "author:official" attribute is too loose (it tags any vendor-
+  // published server). We only mark true Anthropic refs as official.
+  const isOfficial = repo.includes("modelcontextprotocol/servers") || g.namespace === "modelcontextprotocol";
+  const isVerified = attrs.includes("author:official") || attrs.includes("verified") || isOfficial;
   const transports: Transport[] = inferTransports(attrs);
   const authRequired = !!g.environmentVariablesJsonSchema?.required?.length;
   const runtime = inferRuntimeFromRepo(repo, g.namespace);
