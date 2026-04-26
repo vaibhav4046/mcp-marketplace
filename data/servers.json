@@ -1,0 +1,886 @@
+{
+  "generatedAt": "2026-04-17T00:00:00Z",
+  "totalCount": 32,
+  "servers": [
+    {
+      "slug": "filesystem",
+      "name": "Filesystem",
+      "tagline": "Read, write, and search files on the local disk.",
+      "description": "Reference Filesystem server from the official MCP repo. Exposes file read/write, directory listing, search, and glob across configured roots.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "homepage": "https://modelcontextprotocol.io",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "filesystem"],
+      "tags": ["files", "search", "reference"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/me/Documents"]
+        },
+        "claudeCode": "claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem /Users/me/Documents",
+        "cli": "npx -y @modelcontextprotocol/server-filesystem ./"
+      },
+      "tools": [
+        { "name": "read_file", "description": "Read the contents of a file." },
+        { "name": "write_file", "description": "Write content to a file (overwrites)." },
+        { "name": "list_directory", "description": "List files and folders in a directory." },
+        { "name": "search_files", "description": "Search for files matching a pattern." },
+        { "name": "create_directory", "description": "Create a new directory." },
+        { "name": "move_file", "description": "Move or rename a file." }
+      ],
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-15T00:00:00Z"
+    },
+    {
+      "slug": "github",
+      "name": "GitHub",
+      "tagline": "Read and write GitHub repos, issues, PRs, and more.",
+      "description": "Official GitHub MCP server. Manage repos, issues, pull requests, file contents, and runs. Requires a GitHub Personal Access Token.",
+      "author": "GitHub",
+      "authorGithub": "github",
+      "repo": "https://github.com/github/github-mcp-server",
+      "homepage": "https://github.com",
+      "runtime": "go",
+      "transports": ["stdio", "http"],
+      "categories": ["official", "developer-tools", "version-control"],
+      "tags": ["git", "github", "issues", "prs"],
+      "install": {
+        "claudeDesktop": {
+          "command": "docker",
+          "args": ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"],
+          "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_xxx" }
+        },
+        "docker": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN=ghp_xxx ghcr.io/github/github-mcp-server",
+        "claudeCode": "claude mcp add github -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN=ghp_xxx ghcr.io/github/github-mcp-server"
+      },
+      "tools": [
+        { "name": "list_repos", "description": "List repos owned by the user." },
+        { "name": "create_issue", "description": "Open an issue on a repository." },
+        { "name": "create_pull_request", "description": "Create a pull request." },
+        { "name": "search_code", "description": "Search code across GitHub." },
+        { "name": "merge_pr", "description": "Merge an open pull request." }
+      ],
+      "stars": 28500,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2025-01-10T00:00:00Z",
+      "lastUpdated": "2026-04-12T00:00:00Z"
+    },
+    {
+      "slug": "git",
+      "name": "Git",
+      "tagline": "Inspect and operate on a local git repository.",
+      "description": "Reference Git server. Read commits, branches, diffs; stage, commit, and push.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["official", "developer-tools", "version-control"],
+      "tags": ["git", "vcs", "reference"],
+      "install": {
+        "claudeDesktop": {
+          "command": "uvx",
+          "args": ["mcp-server-git", "--repository", "/path/to/repo"]
+        },
+        "cli": "uvx mcp-server-git --repository ."
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "fetch",
+      "name": "Fetch",
+      "tagline": "Fetch URLs and convert HTML to clean Markdown.",
+      "description": "Reference Fetch server. Pull any URL, optionally extract main content, and return Markdown for downstream LLM use.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["official", "browser", "search"],
+      "tags": ["http", "scraping", "markdown"],
+      "install": {
+        "claudeDesktop": { "command": "uvx", "args": ["mcp-server-fetch"] },
+        "cli": "uvx mcp-server-fetch"
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "memory",
+      "name": "Memory",
+      "tagline": "Persistent knowledge graph the model can recall across sessions.",
+      "description": "Reference Memory server. Stores entities and relations in a knowledge graph the LLM updates and queries between turns.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "memory", "knowledge"],
+      "tags": ["memory", "knowledge-graph", "reference"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-memory"]
+        },
+        "cli": "npx -y @modelcontextprotocol/server-memory"
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "sequential-thinking",
+      "name": "Sequential Thinking",
+      "tagline": "Structured chain-of-thought scratchpad for complex problems.",
+      "description": "Reference Sequential Thinking server. Provides a tool the model can call to record stepwise thoughts, branch reasoning, and revisit prior steps.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "ai", "developer-tools"],
+      "tags": ["reasoning", "agents"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+        },
+        "cli": "npx -y @modelcontextprotocol/server-sequential-thinking"
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-12-15T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "puppeteer",
+      "name": "Puppeteer",
+      "tagline": "Drive a headless Chrome browser — navigate, click, scrape.",
+      "description": "Reference Puppeteer server. Headless Chromium with screenshot, click, type, and full DOM access.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "browser"],
+      "tags": ["browser", "scraping", "automation"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-12-01T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "postgres",
+      "name": "Postgres",
+      "tagline": "Read-only SQL access to a Postgres database.",
+      "description": "Reference Postgres server. Run SELECT queries, inspect schemas, list tables.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "database"],
+      "tags": ["postgres", "sql", "database"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost/mydb"]
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "sqlite",
+      "name": "SQLite",
+      "tagline": "Query a local SQLite database safely.",
+      "description": "Reference SQLite server. Inspect schemas and run SELECT queries against a `.db` file.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["official", "database"],
+      "tags": ["sqlite", "sql", "local"],
+      "install": {
+        "claudeDesktop": {
+          "command": "uvx",
+          "args": ["mcp-server-sqlite", "--db-path", "/path/to/db.sqlite"]
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "brave-search",
+      "name": "Brave Search",
+      "tagline": "Web and local search powered by Brave's Search API.",
+      "description": "Search the web with Brave. Returns titles, URLs, and snippets. Requires a Brave Search API key.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "search"],
+      "tags": ["search", "web", "brave"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+          "env": { "BRAVE_API_KEY": "your-key" }
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "tagline": "Read and post to Slack channels and DMs.",
+      "description": "Reference Slack server. List channels, fetch messages, post replies, react to messages.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "messaging", "productivity"],
+      "tags": ["slack", "chat", "team"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-slack"],
+          "env": { "SLACK_BOT_TOKEN": "xoxb-..." }
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "google-drive",
+      "name": "Google Drive",
+      "tagline": "Browse and read files in your Google Drive.",
+      "description": "Reference Drive server. Search, list, and read Drive files (Docs, Sheets, Slides, PDFs).",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "productivity", "storage"],
+      "tags": ["google", "drive", "docs"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-gdrive"]
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "google-maps",
+      "name": "Google Maps",
+      "tagline": "Geocoding, places, directions via Google Maps API.",
+      "description": "Reference Google Maps server. Geocode addresses, search places, get directions.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "search"],
+      "tags": ["maps", "geocoding", "places"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-google-maps"],
+          "env": { "GOOGLE_MAPS_API_KEY": "your-key" }
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-12-15T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "everart",
+      "name": "EverArt",
+      "tagline": "Generate images via the EverArt API.",
+      "description": "Reference EverArt image-generation server.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/everart",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "ai", "design"],
+      "tags": ["image", "generation"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-everart"],
+          "env": { "EVERART_API_KEY": "your-key" }
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-12-15T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "everything",
+      "name": "Everything",
+      "tagline": "Reference server demonstrating every MCP capability.",
+      "description": "Test/reference server. Implements prompts, resources, tools, sampling, and progress so you can validate clients.",
+      "author": "Anthropic",
+      "authorGithub": "modelcontextprotocol",
+      "repo": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["official", "developer-tools"],
+      "tags": ["reference", "test", "spec"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-everything"]
+        }
+      },
+      "stars": 51000,
+      "official": true,
+      "verified": true,
+      "license": "MIT",
+      "source": "official",
+      "addedAt": "2024-11-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "playwright",
+      "name": "Playwright",
+      "tagline": "Microsoft's browser automation MCP server.",
+      "description": "Drive Chromium, Firefox, and WebKit with Playwright. Snapshot pages, click, type, and assert.",
+      "author": "Microsoft",
+      "authorGithub": "microsoft",
+      "repo": "https://github.com/microsoft/playwright-mcp",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["browser", "developer-tools"],
+      "tags": ["browser", "automation", "testing"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@playwright/mcp@latest"]
+        },
+        "claudeCode": "claude mcp add playwright -- npx -y @playwright/mcp@latest"
+      },
+      "stars": 14200,
+      "verified": true,
+      "license": "Apache-2.0",
+      "source": "community",
+      "addedAt": "2025-03-10T00:00:00Z",
+      "lastUpdated": "2026-04-15T00:00:00Z"
+    },
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "tagline": "Read, write, and search Notion pages and databases.",
+      "description": "Official Notion MCP server. Query databases, create pages, edit blocks. Requires a Notion integration token.",
+      "author": "Notion",
+      "authorGithub": "makenotion",
+      "repo": "https://github.com/makenotion/notion-mcp-server",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["productivity", "knowledge"],
+      "tags": ["notion", "docs", "knowledge"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@notionhq/notion-mcp-server"],
+          "env": { "OPENAPI_MCP_HEADERS": "{\"Authorization\":\"Bearer ntn_xxx\",\"Notion-Version\":\"2022-06-28\"}" }
+        }
+      },
+      "stars": 7800,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-02-20T00:00:00Z",
+      "lastUpdated": "2026-04-12T00:00:00Z"
+    },
+    {
+      "slug": "linear",
+      "name": "Linear",
+      "tagline": "Manage Linear issues, projects, and cycles.",
+      "description": "Linear MCP. Search issues, create new ones, move them between states, attach comments.",
+      "author": "Linear",
+      "authorGithub": "linear",
+      "repo": "https://github.com/linear/linear-mcp",
+      "runtime": "node",
+      "transports": ["stdio", "http"],
+      "categories": ["productivity", "developer-tools"],
+      "tags": ["linear", "issues", "tickets"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@linear/mcp"],
+          "env": { "LINEAR_API_KEY": "lin_api_xxx" }
+        }
+      },
+      "stars": 4900,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-03-01T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z"
+    },
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "tagline": "Read Figma files, frames, and components.",
+      "description": "Figma MCP server. Pull file metadata, frames, components, and variables for design-aware code generation.",
+      "author": "Figma",
+      "authorGithub": "figma",
+      "repo": "https://github.com/figma/mcp",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["design", "productivity"],
+      "tags": ["figma", "design"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@figma/mcp"],
+          "env": { "FIGMA_TOKEN": "figd_xxx" }
+        }
+      },
+      "stars": 6200,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-04-10T00:00:00Z",
+      "lastUpdated": "2026-04-14T00:00:00Z"
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase",
+      "tagline": "Query Postgres, manage RLS, and call Edge Functions.",
+      "description": "Official Supabase MCP. Inspect schemas, run SQL, and manage Auth and Storage.",
+      "author": "Supabase",
+      "authorGithub": "supabase-community",
+      "repo": "https://github.com/supabase-community/supabase-mcp",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["database", "cloud"],
+      "tags": ["supabase", "postgres", "auth"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@supabase/mcp-server-supabase@latest", "--access-token", "sbp_xxx"]
+        }
+      },
+      "stars": 5400,
+      "verified": true,
+      "authRequired": true,
+      "license": "Apache-2.0",
+      "source": "community",
+      "addedAt": "2025-04-01T00:00:00Z",
+      "lastUpdated": "2026-04-13T00:00:00Z"
+    },
+    {
+      "slug": "stripe",
+      "name": "Stripe",
+      "tagline": "Read and write Stripe customers, subscriptions, and invoices.",
+      "description": "Official Stripe MCP server. Create payment links, query subscriptions, refund charges.",
+      "author": "Stripe",
+      "authorGithub": "stripe",
+      "repo": "https://github.com/stripe/agent-toolkit",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["cloud", "productivity"],
+      "tags": ["payments", "stripe", "billing"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@stripe/mcp", "--tools=all"],
+          "env": { "STRIPE_SECRET_KEY": "sk_live_xxx" }
+        }
+      },
+      "stars": 3800,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-03-15T00:00:00Z",
+      "lastUpdated": "2026-04-09T00:00:00Z"
+    },
+    {
+      "slug": "obsidian",
+      "name": "Obsidian",
+      "tagline": "Read and write notes in an Obsidian vault.",
+      "description": "Search, read, append, and create notes. Works with the Obsidian Local REST API plugin.",
+      "author": "MarkusPfundstein",
+      "authorGithub": "MarkusPfundstein",
+      "repo": "https://github.com/MarkusPfundstein/mcp-obsidian",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["knowledge", "productivity"],
+      "tags": ["obsidian", "notes", "vault"],
+      "install": {
+        "claudeDesktop": {
+          "command": "uvx",
+          "args": ["mcp-obsidian"],
+          "env": { "OBSIDIAN_API_KEY": "your-key", "OBSIDIAN_HOST": "127.0.0.1" }
+        }
+      },
+      "stars": 2400,
+      "verified": false,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-02-05T00:00:00Z",
+      "lastUpdated": "2026-04-02T00:00:00Z"
+    },
+    {
+      "slug": "exa",
+      "name": "Exa Search",
+      "tagline": "Neural search across the web with citations.",
+      "description": "Exa AI search server. Semantic web search with content extraction and citations.",
+      "author": "Exa",
+      "authorGithub": "exa-labs",
+      "repo": "https://github.com/exa-labs/exa-mcp-server",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["search", "ai", "research"],
+      "tags": ["search", "web", "neural"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "exa-mcp-server"],
+          "env": { "EXA_API_KEY": "your-key" }
+        }
+      },
+      "stars": 3100,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-02-12T00:00:00Z",
+      "lastUpdated": "2026-04-11T00:00:00Z"
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "tagline": "Web-grounded answers via the Perplexity API.",
+      "description": "Ask questions and get cited, web-grounded responses from Perplexity.",
+      "author": "Perplexity",
+      "authorGithub": "ppl-ai",
+      "repo": "https://github.com/ppl-ai/modelcontextprotocol",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["search", "ai", "research"],
+      "tags": ["search", "perplexity", "qa"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "server-perplexity-ask"],
+          "env": { "PERPLEXITY_API_KEY": "your-key" }
+        }
+      },
+      "stars": 2200,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-03-05T00:00:00Z",
+      "lastUpdated": "2026-04-07T00:00:00Z"
+    },
+    {
+      "slug": "tavily",
+      "name": "Tavily",
+      "tagline": "Search-augmented retrieval optimized for agents.",
+      "description": "Tavily's MCP. Curated, agent-friendly search with source filtering.",
+      "author": "Tavily",
+      "authorGithub": "tavily-ai",
+      "repo": "https://github.com/tavily-ai/tavily-mcp",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["search", "ai"],
+      "tags": ["search", "tavily", "agents"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "tavily-mcp"],
+          "env": { "TAVILY_API_KEY": "tvly-xxx" }
+        }
+      },
+      "stars": 1800,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-03-20T00:00:00Z",
+      "lastUpdated": "2026-04-06T00:00:00Z"
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "tagline": "Text-to-speech and voice cloning via ElevenLabs.",
+      "description": "Generate audio from text, manage voices, and orchestrate TTS pipelines.",
+      "author": "ElevenLabs",
+      "authorGithub": "elevenlabs",
+      "repo": "https://github.com/elevenlabs/elevenlabs-mcp",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["voice", "ai"],
+      "tags": ["tts", "voice", "audio"],
+      "install": {
+        "claudeDesktop": {
+          "command": "uvx",
+          "args": ["elevenlabs-mcp"],
+          "env": { "ELEVENLABS_API_KEY": "sk_xxx" }
+        }
+      },
+      "stars": 2700,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-04-05T00:00:00Z",
+      "lastUpdated": "2026-04-15T00:00:00Z"
+    },
+    {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "tagline": "Manage Workers, KV, R2, and D1 from your model.",
+      "description": "Official Cloudflare MCP. Deploy Workers, query D1, list KV namespaces.",
+      "author": "Cloudflare",
+      "authorGithub": "cloudflare",
+      "repo": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "runtime": "node",
+      "transports": ["stdio", "http"],
+      "categories": ["cloud", "developer-tools"],
+      "tags": ["cloudflare", "workers", "edge"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@cloudflare/mcp-server-cloudflare", "init"]
+        }
+      },
+      "stars": 4100,
+      "verified": true,
+      "authRequired": true,
+      "license": "Apache-2.0",
+      "source": "community",
+      "addedAt": "2025-02-25T00:00:00Z",
+      "lastUpdated": "2026-04-10T00:00:00Z"
+    },
+    {
+      "slug": "sentry",
+      "name": "Sentry",
+      "tagline": "Inspect Sentry issues and recent error events.",
+      "description": "Pull recent Sentry events, group by issue, and surface stack traces for debugging.",
+      "author": "Sentry",
+      "authorGithub": "getsentry",
+      "repo": "https://github.com/getsentry/sentry-mcp",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["monitoring", "developer-tools"],
+      "tags": ["sentry", "errors", "monitoring"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@sentry/mcp-server"],
+          "env": { "SENTRY_AUTH_TOKEN": "sntrys_xxx" }
+        }
+      },
+      "stars": 1500,
+      "verified": true,
+      "authRequired": true,
+      "license": "Apache-2.0",
+      "source": "community",
+      "addedAt": "2025-03-25T00:00:00Z",
+      "lastUpdated": "2026-04-08T00:00:00Z"
+    },
+    {
+      "slug": "kubernetes",
+      "name": "Kubernetes",
+      "tagline": "Inspect and manage a Kubernetes cluster.",
+      "description": "Operate against a kubeconfig context. List pods, deployments, logs, and exec where allowed.",
+      "author": "Flux159",
+      "authorGithub": "Flux159",
+      "repo": "https://github.com/Flux159/mcp-server-kubernetes",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["cloud", "developer-tools"],
+      "tags": ["kubernetes", "k8s", "devops"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "mcp-server-kubernetes"]
+        }
+      },
+      "stars": 2100,
+      "verified": false,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-02-18T00:00:00Z",
+      "lastUpdated": "2026-04-04T00:00:00Z"
+    },
+    {
+      "slug": "qdrant",
+      "name": "Qdrant",
+      "tagline": "Vector search over a Qdrant collection.",
+      "description": "Semantic memory backed by Qdrant. Upsert and search vectors, filter by payload.",
+      "author": "Qdrant",
+      "authorGithub": "qdrant",
+      "repo": "https://github.com/qdrant/mcp-server-qdrant",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["memory", "ai", "database"],
+      "tags": ["vector", "qdrant", "rag"],
+      "install": {
+        "claudeDesktop": {
+          "command": "uvx",
+          "args": ["mcp-server-qdrant"],
+          "env": { "QDRANT_URL": "http://localhost:6333", "COLLECTION_NAME": "memories" }
+        }
+      },
+      "stars": 1700,
+      "verified": true,
+      "license": "Apache-2.0",
+      "source": "community",
+      "addedAt": "2025-03-12T00:00:00Z",
+      "lastUpdated": "2026-04-06T00:00:00Z"
+    },
+    {
+      "slug": "atlassian",
+      "name": "Atlassian (Jira + Confluence)",
+      "tagline": "Search and edit Jira issues and Confluence pages.",
+      "description": "Atlassian MCP. Query JQL, transition issues, update Confluence content.",
+      "author": "sooperset",
+      "authorGithub": "sooperset",
+      "repo": "https://github.com/sooperset/mcp-atlassian",
+      "runtime": "python",
+      "transports": ["stdio"],
+      "categories": ["productivity", "knowledge"],
+      "tags": ["jira", "confluence", "atlassian"],
+      "install": {
+        "claudeDesktop": {
+          "command": "uvx",
+          "args": ["mcp-atlassian"],
+          "env": {
+            "JIRA_URL": "https://company.atlassian.net",
+            "JIRA_USERNAME": "you@company.com",
+            "JIRA_API_TOKEN": "xxx"
+          }
+        }
+      },
+      "stars": 1600,
+      "verified": false,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-02-28T00:00:00Z",
+      "lastUpdated": "2026-04-05T00:00:00Z"
+    },
+    {
+      "slug": "youtube-transcript",
+      "name": "YouTube Transcript",
+      "tagline": "Pull transcripts and metadata from YouTube videos.",
+      "description": "Fetch the transcript, title, and chapters of any YouTube video for downstream summarization.",
+      "author": "Kimtaeyoon83",
+      "authorGithub": "Kimtaeyoon83",
+      "repo": "https://github.com/Kimtaeyoon83/mcp-server-youtube-transcript",
+      "runtime": "node",
+      "transports": ["stdio"],
+      "categories": ["video", "knowledge"],
+      "tags": ["youtube", "transcript", "video"],
+      "install": {
+        "claudeDesktop": {
+          "command": "npx",
+          "args": ["-y", "@kimtaeyoon83/mcp-server-youtube-transcript"]
+        }
+      },
+      "stars": 900,
+      "verified": false,
+      "license": "MIT",
+      "source": "community",
+      "addedAt": "2025-03-08T00:00:00Z",
+      "lastUpdated": "2026-04-03T00:00:00Z"
+    }
+  ]
+}
