@@ -43,7 +43,8 @@ export function TabsList({ className, ...props }: React.HTMLAttributes<HTMLDivEl
     <div
       role="tablist"
       className={cn(
-        "inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-subtle p-0.5",
+        "inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-subtle p-0.5 max-w-full overflow-x-auto",
+        "[&::-webkit-scrollbar]:hidden [scrollbar-width:none]",
         className
       )}
       {...props}
@@ -66,7 +67,7 @@ export function TabsTrigger({ value, className, ...props }: TabsTriggerProps) {
       data-state={active ? "active" : "inactive"}
       onClick={() => ctx.setValue(value)}
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-medium transition-all",
+        "inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-medium transition-all whitespace-nowrap shrink-0 tap-scale",
         active
           ? "bg-bg text-fg shadow-sm"
           : "text-fg-muted hover:text-fg",
