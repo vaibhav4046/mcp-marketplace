@@ -34,7 +34,7 @@ The Model Context Protocol shipped fast and the server ecosystem is sprawling. T
 
 | | |
 |---|---|
-| **⌘K command palette** | Fuzzy search 30+ servers in one keystroke |
+| **Cmd-K command palette** | Fuzzy search 30+ servers in one keystroke |
 | **Faceted browse** | Category chips, runtime filter, auth filter, sort by popular/recent/alpha |
 | **Server detail pages** | Full description, install snippets, tool list with input schemas, related servers |
 | **One-click install** | Copy a Claude Desktop JSON block, a Claude Code add command, or a raw CLI snippet |
@@ -79,7 +79,7 @@ npm run sync -- --dry
 │         ▼                                                   │
 │  app/page.tsx  →  hero + featured + side panels + grid      │
 │  app/server/[slug]/page.tsx  →  detail with install + tools │
-│  components/command-palette.tsx  →  ⌘K Fuse.js search       │
+│  components/command-palette.tsx  →  Cmd-K Fuse.js search       │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -107,7 +107,7 @@ mcp-marketplace/
 ├── components/
 │   ├── header.tsx              Sticky glass header
 │   ├── theme-toggle.tsx
-│   ├── command-palette.tsx     ⌘K Fuse.js fuzzy search
+│   ├── command-palette.tsx     Cmd-K Fuse.js fuzzy search
 │   ├── server-card.tsx
 │   ├── server-grid.tsx         Filters + sort + grid
 │   ├── install-tabs.tsx        Per-client install snippets
