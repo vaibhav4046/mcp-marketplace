@@ -2,6 +2,10 @@
 
 # MCP Marketplace
 
+<p align="center">
+  <a href="https://mcp-hub-registry.vercel.app"><img src="docs/screenshots/hero.png" alt="Discover 800+ MCP servers in seconds" width="100%" /></a>
+</p>
+
 ### The registry of Model Context Protocol servers.
 
 **Browse, search, and install MCP servers in seconds.** Auto-synced daily from official + community sources. Built for Claude Code, Claude Desktop, Cursor, and any MCP-aware client.
