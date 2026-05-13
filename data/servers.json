@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T08:30:03.908Z",
+  "generatedAt": "2026-05-13T08:36:10.656Z",
   "totalCount": 800,
   "servers": [
     {
@@ -1248,6 +1248,35 @@
       "addedAt": "2026-05-12T08:29:03.534Z"
     },
     {
+      "slug": "particle-academy-docs-mcp",
+      "name": "@particle academy/docs MCP",
+      "tagline": "A dev-time MCP server that lets coding agents read documentation directly from installed @particle-academy/\\* packages, ensuring …",
+      "description": "A dev-time MCP server that lets coding agents read documentation directly from installed @particle-academy/\\* packages, ensuring version-matched docs without network calls.",
+      "author": "Particle-Academy",
+      "authorGithub": "Particle-Academy",
+      "repo": "https://github.com/Particle-Academy/docs-mcp",
+      "homepage": "https://glama.ai/mcp/servers/aez4d4ixn9",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "knowledge",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/Particle-Academy/docs-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.639Z"
+    },
+    {
       "slug": "posteverywhere-mcp",
       "name": "@posteverywhere/MCP",
       "tagline": "Enables AI assistants to schedule and publish social media posts to platforms like Instagram, TikTok, YouTube, LinkedIn, Facebook…",
@@ -1339,6 +1368,35 @@
       "addedAt": "2026-05-12T08:29:59.066Z"
     },
     {
+      "slug": "ratel-ai-ratel-mcp",
+      "name": "@ratel ai/MCP SERVER",
+      "tagline": "Exposes a Ratel tool catalog over MCP with two tools (search_tools and invoke_tool), and includes a CLI for managing multi-scope …",
+      "description": "Exposes a Ratel tool catalog over MCP with two tools (search_tools and invoke_tool), and includes a CLI for managing multi-scope MCP configurations, OAuth flows, and telemetry.",
+      "author": "ratel-ai",
+      "authorGithub": "ratel-ai",
+      "repo": "https://github.com/ratel-ai/ratel-mcp",
+      "homepage": "https://glama.ai/mcp/servers/pisq1k31rs",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "monitoring",
+        "search",
+        "security"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/ratel-ai/ratel-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.640Z"
+    },
+    {
       "slug": "restforge-restforge-mcp",
       "name": "@restforge dev/MCP SERVER",
       "tagline": "MCP server that exposes RESTForge capabilities to AI agents, enabling them to set up, configure, generate code, and manage RESTFo…",
@@ -1367,6 +1425,37 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-08T07:19:06.761Z"
+    },
+    {
+      "slug": "retailerapi-mcp",
+      "name": "@retailerapi/MCP",
+      "tagline": "Enables AI agents to access Walmart product data including lookups, price history, offers, seller profiles, reviews, and sales st…",
+      "description": "Enables AI agents to access Walmart product data including lookups, price history, offers, seller profiles, reviews, and sales stats via tools callable in MCP-compatible clients like Claude Desktop and Cursor.",
+      "author": "retailerapi",
+      "authorGithub": "retailerapi",
+      "repo": "https://github.com/retailerapi/mcp",
+      "homepage": "https://glama.ai/mcp/servers/n4mkkm0gan",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "filesystem",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "claude"
+      ],
+      "install": {
+        "cli": "# See https://github.com/retailerapi/mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.640Z"
     },
     {
       "slug": "secr-dev-mcp",
@@ -1428,6 +1517,63 @@
       "addedAt": "2026-05-12T08:29:05.977Z"
     },
     {
+      "slug": "shipeasy-ai-mcp",
+      "name": "@shipeasy/MCP",
+      "tagline": "A unified MCP server for experimentation and i18n, enabling AI assistants to manage feature flags, experiments, metrics, events, …",
+      "description": "A unified MCP server for experimentation and i18n, enabling AI assistants to manage feature flags, experiments, metrics, events, and string translations via natural language.",
+      "author": "shipeasy-ai",
+      "authorGithub": "shipeasy-ai",
+      "repo": "https://github.com/shipeasy-ai/mcp",
+      "homepage": "https://glama.ai/mcp/servers/es56gy0r0p",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/shipeasy-ai/mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.640Z"
+    },
+    {
+      "slug": "vocea-admin-mcp-server",
+      "name": "@vocea.app/MCP SERVER",
+      "tagline": "Enables AI agents to generate speech, transcribe audio, and manage voices via the Vocea API.",
+      "description": "Enables AI agents to generate speech, transcribe audio, and manage voices via the Vocea API.",
+      "author": "vocea-admin",
+      "authorGithub": "vocea-admin",
+      "repo": "https://github.com/vocea-admin/mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/xt5kkxycsw",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "voice",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/vocea-admin/mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.639Z"
+    },
+    {
       "slug": "2slides-mcp-2slides",
       "name": "2slides MCP SERVER",
       "tagline": "Enables users to generate presentation slides using 2slides.com's API through Claude Desktop. Supports searching for slide themes…",
@@ -1458,34 +1604,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-09T07:46:46.290Z"
-    },
-    {
-      "slug": "octoeverywhere-mcp",
-      "name": "3D Printer MCP SERVER",
-      "tagline": "3D Printing MCP By OctoEverywhere",
-      "description": "3D Printing MCP By OctoEverywhere",
-      "author": "OctoEverywhere",
-      "authorGithub": "OctoEverywhere",
-      "repo": "https://github.com/OctoEverywhere/mcp",
-      "homepage": "https://glama.ai/mcp/servers/icaibftsmr",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/OctoEverywhere/mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "Apache 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:31.042Z"
     },
     {
       "slug": "638labs-638labs-mcp-server",
@@ -1692,33 +1810,6 @@
       "addedAt": "2026-05-09T07:46:58.251Z"
     },
     {
-      "slug": "cdatasoftware-active-directory-mcp-server-by-cdata",
-      "name": "Active Directory MCP SERVER by CData",
-      "tagline": "Active Directory MCP Server by CData",
-      "description": "Active Directory MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/active-directory-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/rxi2yov1j3",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "filesystem"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/active-directory-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.823Z"
-    },
-    {
       "slug": "cdatasoftware-acumatica-mcp-server-by-cdata",
       "name": "Acumatica MCP SERVER by CData",
       "tagline": "This read-only MCP Server allows you to connect to Acumatica data from Claude Desktop through CData JDBC Drivers. Free (beta) rea…",
@@ -1857,6 +1948,34 @@
       "authRequired": false,
       "source": "glama",
       "addedAt": "2026-05-12T08:29:09.029Z"
+    },
+    {
+      "slug": "callstackincubator-agent-device",
+      "name": "agent device",
+      "tagline": "Discovery router for the agent-device CLI with status, install, help, prompts, and resources.",
+      "description": "Discovery router for the agent-device CLI with status, install, help, prompts, and resources.",
+      "author": "callstackincubator",
+      "authorGithub": "callstackincubator",
+      "repo": "https://github.com/callstackincubator/agent-device",
+      "homepage": "https://glama.ai/mcp/servers/d71rswj9hu",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/callstackincubator/agent-device#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.641Z"
     },
     {
       "slug": "agentanycast-agentanycast-node",
@@ -2219,34 +2338,6 @@
       "addedAt": "2026-05-09T07:46:57.516Z"
     },
     {
-      "slug": "getalby-mcp",
-      "name": "Alby Bitcoin Payments MCP SERVER",
-      "tagline": "Connects a Bitcoin Lightning wallet to your LLM using Nostr Wallet Connect, enabling payments and interactions with Lightning Net…",
-      "description": "Connects a Bitcoin Lightning wallet to your LLM using Nostr Wallet Connect, enabling payments and interactions with Lightning Network features.",
-      "author": "getAlby",
-      "authorGithub": "getAlby",
-      "repo": "https://github.com/getAlby/mcp",
-      "homepage": "https://glama.ai/mcp/servers/fpkr8ijvpc",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/getAlby/mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "Apache 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.824Z"
-    },
-    {
       "slug": "alchemyplatform-alchemy-mcp-server",
       "name": "Alchemy MCP SERVER",
       "tagline": "Alchemy MCP Server",
@@ -2333,34 +2424,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:59.610Z"
-    },
-    {
-      "slug": "aliyun-alibabacloud-fc-mcp-server",
-      "name": "Alibaba Cloud FC MCP SERVER",
-      "tagline": "A Model Context Protocol server that enables agent applications like Cursor and Cline to integrate with Alibaba Cloud Function Co…",
-      "description": "A Model Context Protocol server that enables agent applications like Cursor and Cline to integrate with Alibaba Cloud Function Compute, allowing them to deploy and manage serverless functions through natural language interactions.",
-      "author": "aliyun",
-      "authorGithub": "aliyun",
-      "repo": "https://github.com/aliyun/alibabacloud-fc-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/u4ijbbu7yb",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/aliyun/alibabacloud-fc-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:31.042Z"
     },
     {
       "slug": "aliyun-alibabacloud-ecs-mcp-server",
@@ -4802,6 +4865,34 @@
       "addedAt": "2026-05-12T08:29:09.028Z"
     },
     {
+      "slug": "csoai-org-changelog-ai-mcp",
+      "name": "Changelog AI MCP",
+      "tagline": "Changelog AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Changelog AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/changelog-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/xllzytyz39",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "monitoring",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/changelog-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.607Z"
+    },
+    {
       "slug": "chia-health-chia-mcp",
       "name": "Chia Health MCP",
       "tagline": "Chia Health MCP – let AI agents guide patients from medication browsing to prescription delivery. 30 tools covering eligibility c…",
@@ -4860,6 +4951,33 @@
       "authRequired": false,
       "source": "glama",
       "addedAt": "2026-05-09T07:46:47.448Z"
+    },
+    {
+      "slug": "csoai-org-churn-predictor-ai-mcp",
+      "name": "Churn Predictor AI MCP",
+      "tagline": "Churn Predictor AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Churn Predictor AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/churn-predictor-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/rykp8x2n3v",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/churn-predictor-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
     },
     {
       "slug": "cinderfi-cinderfi-mcp",
@@ -5065,6 +5183,33 @@
       "authRequired": true,
       "source": "glama",
       "addedAt": "2026-05-12T08:30:03.569Z"
+    },
+    {
+      "slug": "csoai-org-cli-builder-ai-mcp",
+      "name": "CLI Builder AI MCP",
+      "tagline": "CLI Builder AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "CLI Builder AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/h0hs03s0wm",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/cli-builder-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.606Z"
     },
     {
       "slug": "clicks-protocol-clicks-protocol",
@@ -5642,33 +5787,6 @@
       "addedAt": "2026-05-12T08:29:18.108Z"
     },
     {
-      "slug": "cdatasoftware-confluence-mcp-server-by-cdata",
-      "name": "Confluence MCP SERVER by CData",
-      "tagline": "Confluence MCP Server by CData",
-      "description": "Confluence MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/confluence-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/fhys8x7mcd",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "knowledge"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/confluence-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.582Z"
-    },
-    {
       "slug": "connectry-io-connectrylab-architect-cert-mcp",
       "name": "Connectry Architect Cert",
       "tagline": "Free certification prep for the Claude Certified Architect exam. 390 scenario-based questions, guided capstone build, 30 concept …",
@@ -5839,6 +5957,33 @@
       "authRequired": false,
       "source": "glama",
       "addedAt": "2026-05-10T08:00:07.093Z"
+    },
+    {
+      "slug": "csoai-org-contract-review-ai-mcp",
+      "name": "Contract Review AI MCP",
+      "tagline": "Contract Review AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Contract Review AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/contract-review-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/q49kban8w9",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/contract-review-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.315Z"
     },
     {
       "slug": "philipithomas-ghost-mcp",
@@ -6165,6 +6310,33 @@
       "addedAt": "2026-05-12T08:29:22.596Z"
     },
     {
+      "slug": "csoai-org-csoai-governance-crosswalk-mcp",
+      "name": "CSOAI Governance Crosswalk MCP",
+      "tagline": "CSOAI Governance Crosswalk - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "CSOAI Governance Crosswalk - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/csoai-governance-crosswalk-mcp",
+      "homepage": "https://glama.ai/mcp/servers/d8wspn8uqs",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/csoai-governance-crosswalk-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
+    },
+    {
       "slug": "cdatasoftware-csv-files-mcp-server-by-cdata",
       "name": "CSV File MCP SERVER by CData",
       "tagline": "CSV File MCP Server by CData",
@@ -6276,6 +6448,39 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:10.666Z"
+    },
+    {
+      "slug": "dakera-ai-dakera-mcp",
+      "name": "dakera MCP",
+      "tagline": "Self-hosted MCP-native agent memory server. Gives AI agents persistent, decay-weighted memory via 83 MCP tools — no cloud, full c…",
+      "description": "Self-hosted MCP-native agent memory server. Gives AI agents persistent, decay-weighted memory via 83 MCP tools — no cloud, full control. RocksDB+HNSW backend. Works with Claude Code, Cursor, and any MCP-compatible agent.",
+      "author": "Dakera-AI",
+      "authorGithub": "Dakera-AI",
+      "repo": "https://github.com/Dakera-AI/dakera-mcp",
+      "homepage": "https://glama.ai/mcp/servers/ktbdnhk51e",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "memory",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "claude",
+        "memory"
+      ],
+      "install": {
+        "cli": "# See https://github.com/Dakera-AI/dakera-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.639Z"
     },
     {
       "slug": "databox-databox-mcp",
@@ -6418,33 +6623,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:19.579Z"
-    },
-    {
-      "slug": "debugg-ai-debugg-ai-mcp",
-      "name": "Debugg AI MCP",
-      "tagline": "Debugg AI MCP",
-      "description": "Debugg AI MCP",
-      "author": "debugg-ai",
-      "authorGithub": "debugg-ai",
-      "repo": "https://github.com/debugg-ai/debugg-ai-mcp",
-      "homepage": "https://glama.ai/mcp/servers/z9v33ndzij",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/debugg-ai/debugg-ai-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.824Z"
     },
     {
       "slug": "decisionnode-decisionnode",
@@ -6717,30 +6895,32 @@
       "addedAt": "2026-05-09T07:46:59.242Z"
     },
     {
-      "slug": "devrev-mcp-server",
-      "name": "DevRev MCP SERVER",
-      "tagline": "A Model Context Protocol server that enables searching, retrieving, creating, and updating issues and tickets using DevRev APIs.",
-      "description": "A Model Context Protocol server that enables searching, retrieving, creating, and updating issues and tickets using DevRev APIs.",
-      "author": "devrev",
-      "authorGithub": "devrev",
-      "repo": "https://github.com/devrev/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/s1uu30c9qx",
+      "slug": "devhelmhq-mcp-server",
+      "name": "DevHelm MCP SERVER",
+      "tagline": "MCP server for uptime monitoring, incidents, alerting, and dependency status.",
+      "description": "MCP server for uptime monitoring, incidents, alerting, and dependency status.",
+      "author": "devhelmhq",
+      "authorGithub": "devhelmhq",
+      "repo": "https://github.com/devhelmhq/mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/bkl5o5kcuw",
       "runtime": "unknown",
       "transports": [
+        "http",
         "stdio"
       ],
       "categories": [
-        "search"
+        "monitoring"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/devrev/mcp-server#readme for the canonical install command."
+        "cli": "# See https://github.com/devhelmhq/mcp-server#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
       "authRequired": true,
+      "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.165Z"
+      "addedAt": "2026-05-13T08:36:07.640Z"
     },
     {
       "slug": "dreamfactorysoftware-df-mcp",
@@ -6800,35 +6980,6 @@
       "authRequired": false,
       "source": "glama",
       "addedAt": "2026-05-09T07:46:13.728Z"
-    },
-    {
-      "slug": "digitalocean-digitalocean-mcp",
-      "name": "DigitalOcean MCP SERVER",
-      "tagline": "A server that exposes DigitalOcean App Platform functionality through standardized tools, enabling AI assistants to directly mana…",
-      "description": "A server that exposes DigitalOcean App Platform functionality through standardized tools, enabling AI assistants to directly manage your DigitalOcean apps without writing code or memorizing API endpoints.",
-      "author": "digitalocean",
-      "authorGithub": "digitalocean",
-      "repo": "https://github.com/digitalocean/digitalocean-mcp",
-      "homepage": "https://glama.ai/mcp/servers/ft142123fe",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "version-control",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/digitalocean/digitalocean-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.359Z"
     },
     {
       "slug": "dilix-ai-mcp",
@@ -7195,33 +7346,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:08.800Z"
-    },
-    {
-      "slug": "cdatasoftware-dynamics-365-business-central-mcp-server-by-cdata",
-      "name": "Dynamics 365 Business Central MCP SERVER by CData",
-      "tagline": "Dynamics 365 Business Central MCP Server by CData",
-      "description": "Dynamics 365 Business Central MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/dynamics-365-business-central-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/ibrqa2uxv7",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/dynamics-365-business-central-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.823Z"
     },
     {
       "slug": "cdatasoftware-dynamics-365-mcp-server-by-cdata",
@@ -7816,6 +7940,34 @@
       "addedAt": "2026-05-09T07:46:19.993Z"
     },
     {
+      "slug": "csoai-org-encoder-ai-mcp",
+      "name": "Encoder AI MCP",
+      "tagline": "Encoder AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Encoder AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/encoder-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/mjj3ws333b",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/encoder-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.607Z"
+    },
+    {
       "slug": "engramia-engramia",
       "name": "engramia",
       "tagline": "The memory operations platform for production AI agents — eval-weighted recall, multi-evaluator consensus, GDPR Art. 17/20 govern…",
@@ -8081,6 +8233,7 @@
       "official": false,
       "verified": true,
       "authRequired": true,
+      "license": "BSD 3-Clause",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:03.534Z"
     },
@@ -8333,6 +8486,39 @@
       "addedAt": "2026-05-09T07:46:17.805Z"
     },
     {
+      "slug": "falsifylab-falsifylab-alpha-mcp",
+      "name": "falsifylab",
+      "tagline": "FalsifyLab Alpha is a data API + MCP server providing programmatic alpha access to AI agents (Claude / Cursor / any MCP-compatibl…",
+      "description": "FalsifyLab Alpha is a data API + MCP server providing programmatic alpha access to AI agents (Claude / Cursor / any MCP-compatible client).\n\nEight endpoints surface live crypto + US-equity research signals:\n\n• top_yield_farms — DefiLlama pools with emissions-stripped real APY, IL risk priced, oracle exposure flagged\n• hl_vault_leaderboard — Hyperliquid vault NAV, 30d return, max drawdown, follower",
+      "author": "FalsifyLab",
+      "authorGithub": "FalsifyLab",
+      "repo": "https://github.com/FalsifyLab/falsifylab-alpha-mcp",
+      "homepage": "https://glama.ai/mcp/servers/ai86ks5bg1",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "research",
+        "search",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "claude"
+      ],
+      "install": {
+        "cli": "# See https://github.com/FalsifyLab/falsifylab-alpha-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.640Z"
+    },
+    {
       "slug": "larksuite-lark-openapi-mcp",
       "name": "Feishu/Lark OpenAPI MCP",
       "tagline": "A toolkit that enables AI assistants to directly call Feishu/Lark API interfaces for automation scenarios like document processin…",
@@ -8465,6 +8651,34 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:13.476Z"
+    },
+    {
+      "slug": "csoai-org-flight-logger-mcp",
+      "name": "Flight Logger MCP",
+      "tagline": "Flight Logger - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Flight Logger - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/flight-logger-mcp",
+      "homepage": "https://glama.ai/mcp/servers/qn3ss287rp",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/flight-logger-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.606Z"
     },
     {
       "slug": "florentine-ai-mcp",
@@ -8710,33 +8924,6 @@
       "addedAt": "2026-05-09T07:46:41.097Z"
     },
     {
-      "slug": "cdatasoftware-freshdesk-mcp-server-by-cdata",
-      "name": "Freshdesk MCP SERVER by CData",
-      "tagline": "Freshdesk MCP Server by CData",
-      "description": "Freshdesk MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/freshdesk-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/mwjd02ey33",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/freshdesk-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.582Z"
-    },
-    {
       "slug": "frogeye-ai-mcp",
       "name": "frogeye MCP",
       "tagline": "AI-powered security vulnerability detection for MCP-compatible agents, offering real-time scanning of code against a knowledge gr…",
@@ -8768,33 +8955,6 @@
       "authRequired": true,
       "source": "glama",
       "addedAt": "2026-05-07T08:21:19.037Z"
-    },
-    {
-      "slug": "cdatasoftware-ftp-mcp-server-by-cdata",
-      "name": "FTP MCP SERVER by CData",
-      "tagline": "FTP MCP Server by CData",
-      "description": "FTP MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/ftp-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/c07giuy9zh",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/ftp-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.822Z"
     },
     {
       "slug": "fuellabs-fuel-mcp-server",
@@ -9350,33 +9510,6 @@
       "addedAt": "2026-05-09T07:46:30.219Z"
     },
     {
-      "slug": "cdatasoftware-greenplum-mcp-server-by-cdata",
-      "name": "Greenplum MCP SERVER by CData",
-      "tagline": "Greenplum MCP Server by CData",
-      "description": "Greenplum MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/greenplum-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/csmbdxvc71",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/greenplum-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.582Z"
-    },
-    {
       "slug": "grip-foundation-grip-mcp",
       "name": "Grip MCP",
       "tagline": "Provides a non-custodial USDC wallet on Base for AI agents, with human-in-the-loop approval for every payment.",
@@ -9523,34 +9656,6 @@
       "addedAt": "2026-05-09T07:46:14.291Z"
     },
     {
-      "slug": "handaas-mcp-server",
-      "name": "HANDAAS Enterprise Big Data Service MCP",
-      "tagline": "A server that provides enterprise data services including company information, profiles, business details, shareholders, investme…",
-      "description": "A server that provides enterprise data services including company information, profiles, business details, shareholders, investments, branches, and key personnel through keyword search and specific queries.",
-      "author": "handaas",
-      "authorGithub": "handaas",
-      "repo": "https://github.com/handaas/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/ar4cic4rp5",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "filesystem",
-        "search"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/handaas/mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.358Z"
-    },
-    {
       "slug": "hasdata-hasdata-mcp",
       "name": "hasdata MCP",
       "tagline": "Direct access to 40+ scraping and search tools. Extract structured data from Google (Search, Maps, Trends), Amazon, Airbnb, Socia…",
@@ -9668,31 +9773,32 @@
       "addedAt": "2026-05-09T07:46:14.678Z"
     },
     {
-      "slug": "cdatasoftware-hdfs-mcp-server-by-cdata",
-      "name": "HDFS MCP SERVER by CData",
-      "tagline": "HDFS MCP Server by CData",
-      "description": "HDFS MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/hdfs-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/zkb47qmlw8",
+      "slug": "csoai-org-healthcare-ai-governance-mcp",
+      "name": "Healthcare AI Governance MCP",
+      "tagline": "Healthcare AI Governance - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Healthcare AI Governance - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/healthcare-ai-governance-mcp",
+      "homepage": "https://glama.ai/mcp/servers/q7grx23oz4",
       "runtime": "unknown",
       "transports": [
+        "http",
         "stdio"
       ],
       "categories": [
-        "filesystem"
+        "ai"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/CDataSoftware/hdfs-mcp-server-by-cdata#readme for the canonical install command."
+        "cli": "# See https://github.com/CSOAI-ORG/healthcare-ai-governance-mcp#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
       "authRequired": false,
       "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.582Z"
+      "addedAt": "2026-05-13T08:36:09.314Z"
     },
     {
       "slug": "helius-labs-core-ai",
@@ -10613,6 +10719,34 @@
       "addedAt": "2026-05-07T08:21:19.358Z"
     },
     {
+      "slug": "csoai-org-iso-27001-ai-mcp",
+      "name": "ISO 27001 AI MCP",
+      "tagline": "ISO 27001 AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "ISO 27001 AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/iso-27001-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/vg97khjkfi",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/iso-27001-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.608Z"
+    },
+    {
       "slug": "istefox-istefox-dt-mcp",
       "name": "istefox dt MCP",
       "tagline": "DEVONthink 4 connector with six tools for search, retrieval, and write operations. Dry-run by default, append-only audit log, sel…",
@@ -10781,17 +10915,16 @@
       "addedAt": "2026-05-12T08:29:10.368Z"
     },
     {
-      "slug": "jobswithgpt-mcp",
-      "name": "jobswithgpt",
-      "tagline": "jobswithgpt",
-      "description": "jobswithgpt",
-      "author": "jobswithgpt",
-      "authorGithub": "jobswithgpt",
-      "repo": "https://github.com/jobswithgpt/mcp",
-      "homepage": "https://glama.ai/mcp/servers/b7wc6fcjxk",
+      "slug": "csoai-org-job-description-ai-mcp",
+      "name": "Job Description AI MCP",
+      "tagline": "Job Description AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Job Description AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/job-description-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/cmmvgtcmw2",
       "runtime": "unknown",
       "transports": [
-        "http",
         "stdio"
       ],
       "categories": [
@@ -10799,13 +10932,14 @@
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/jobswithgpt/mcp#readme for the canonical install command."
+        "cli": "# See https://github.com/CSOAI-ORG/job-description-ai-mcp#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
       "authRequired": false,
+      "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.167Z"
+      "addedAt": "2026-05-13T08:36:09.314Z"
     },
     {
       "slug": "joesecurity-joesandboxmcp",
@@ -11310,33 +11444,6 @@
       "addedAt": "2026-05-12T08:29:17.265Z"
     },
     {
-      "slug": "cdatasoftware-kintone-mcp-server-by-cdata",
-      "name": "Kintone MCP SERVER by CData",
-      "tagline": "Kintone MCP Server by CData",
-      "description": "Kintone MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/kintone-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/yi7z2r1jhe",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/kintone-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.582Z"
-    },
-    {
       "slug": "koalr-koalr-mcp",
       "name": "Koalr",
       "tagline": "Connect engineering metrics, DORA performance, deploy risk scoring, and PR health to any AI assistant. Score PRs for deployment r…",
@@ -11368,6 +11475,37 @@
       "addedAt": "2026-05-09T07:46:18.747Z"
     },
     {
+      "slug": "laddro-app-laddro-career-mcp",
+      "name": "laddro career MCP",
+      "tagline": "Resume tailoring, cover letter generation, CV PDF export, and job search tools for AI agents. 18 tools powered by the Laddro Care…",
+      "description": "Resume tailoring, cover letter generation, CV PDF export, and job search tools for AI agents. 18 tools powered by the Laddro Career API.",
+      "author": "laddro-app",
+      "authorGithub": "laddro-app",
+      "repo": "https://github.com/laddro-app/laddro-career-mcp",
+      "homepage": "https://glama.ai/mcp/servers/dkdb2453gu",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "search",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/laddro-app/laddro-career-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.639Z"
+    },
+    {
       "slug": "lagunapools-laguna-pools-mcp",
       "name": "laguna pools MCP",
       "tagline": "AI sales manager for composite swimming pools. Recommends pools by plot size & budget, calculates total cost with accessories, pr…",
@@ -11394,33 +11532,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:14.108Z"
-    },
-    {
-      "slug": "lark-base-team-lark-base-mcp-node-server",
-      "name": "Lark Base MCP SERVER",
-      "tagline": "A Model Context Protocol server that provides LLMs with read and write access to Feishu Base (飞书多维表格) databases, enabling them to…",
-      "description": "A Model Context Protocol server that provides LLMs with read and write access to Feishu Base (飞书多维表格) databases, enabling them to inspect schemas and manipulate records through natural language.",
-      "author": "Lark-Base-Team",
-      "authorGithub": "Lark-Base-Team",
-      "repo": "https://github.com/Lark-Base-Team/lark-base-mcp-node-server",
-      "homepage": "https://glama.ai/mcp/servers/irypmq8bvb",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/Lark-Base-Team/lark-base-mcp-node-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.358Z"
     },
     {
       "slug": "launchnotes-mcp",
@@ -11483,33 +11594,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-10T07:59:25.678Z"
-    },
-    {
-      "slug": "cdatasoftware-ldap-mcp-server-by-cdata",
-      "name": "LDAP MCP SERVER by CData",
-      "tagline": "LDAP MCP Server by CData",
-      "description": "LDAP MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/ldap-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/ltwz05edln",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/ldap-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.822Z"
     },
     {
       "slug": "leadpipe-com-mcp",
@@ -11629,32 +11713,31 @@
       "addedAt": "2026-05-09T07:46:44.023Z"
     },
     {
-      "slug": "lightfastai-lightfast-mcp",
-      "name": "lightfast MCP",
-      "tagline": "Connects creative applications like Blender and Adobe Creative Suite to AI models through the Model Context Protocol, enabling AI…",
-      "description": "Connects creative applications like Blender and Adobe Creative Suite to AI models through the Model Context Protocol, enabling AI-driven creation, manipulation, and automation within these tools.",
-      "author": "lightfastai",
-      "authorGithub": "lightfastai",
-      "repo": "https://github.com/lightfastai/lightfast-mcp",
-      "homepage": "https://glama.ai/mcp/servers/c03szs08uc",
+      "slug": "csoai-org-license-checker-ai-mcp",
+      "name": "License Checker AI MCP",
+      "tagline": "License Checker AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "License Checker AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/license-checker-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/l83q0dowvi",
       "runtime": "unknown",
       "transports": [
         "stdio"
       ],
       "categories": [
-        "design",
-        "storage",
         "ai"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/lightfastai/lightfast-mcp#readme for the canonical install command."
+        "cli": "# See https://github.com/CSOAI-ORG/license-checker-ai-mcp#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
       "authRequired": false,
+      "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.850Z"
+      "addedAt": "2026-05-13T08:36:09.315Z"
     },
     {
       "slug": "aliyun-alibabacloud-lindorm-mcp-server",
@@ -11758,6 +11841,41 @@
       "authRequired": true,
       "source": "glama",
       "addedAt": "2026-05-09T07:46:45.487Z"
+    },
+    {
+      "slug": "lithtrix-lithtrix-mcp",
+      "name": "lithtrix MCP",
+      "tagline": "Memory Consolidation for AI agents across vendors, owners, and time. Provides credibility-scored web search, persistent memory, b…",
+      "description": "Memory Consolidation for AI agents across vendors, owners, and time. Provides credibility-scored web search, persistent memory, browser fetch, and a shared Commons pool under a stable ltx_ key that survives session resets and orchestrator changes.",
+      "author": "lithtrix",
+      "authorGithub": "lithtrix",
+      "repo": "https://github.com/lithtrix/lithtrix-mcp",
+      "homepage": "https://glama.ai/mcp/servers/sklhzixj19",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "browser",
+        "memory",
+        "search",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "memory",
+        "browser"
+      ],
+      "install": {
+        "cli": "# See https://github.com/lithtrix/lithtrix-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.639Z"
     },
     {
       "slug": "litopys-dev-litopys",
@@ -12492,6 +12610,33 @@
       "addedAt": "2026-05-12T08:29:05.742Z"
     },
     {
+      "slug": "csoai-org-math-solver-ai-mcp",
+      "name": "Math Solver AI MCP",
+      "tagline": "Math Solver AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Math Solver AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/math-solver-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/f7e9cpkj6e",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/math-solver-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
+    },
+    {
       "slug": "aurekai-aurekai-mcp",
       "name": "MCP aurekai",
       "tagline": "Aurekai MCP exposes 89 native akai_\\* runtime operators to any MCP-compatible host, covering the full Aurekai binary family — API…",
@@ -12633,6 +12778,36 @@
       "authRequired": false,
       "source": "glama",
       "addedAt": "2026-05-12T08:29:06.214Z"
+    },
+    {
+      "slug": "mcp-hub-corp-mcp",
+      "name": "MCP Hub Security",
+      "tagline": "Security gate that scans MCP servers and Claude Code Skills for vulnerabilities before execution.",
+      "description": "Security gate that scans MCP servers and Claude Code Skills for vulnerabilities before execution.",
+      "author": "mcp-hub-corp",
+      "authorGithub": "mcp-hub-corp",
+      "repo": "https://github.com/mcp-hub-corp/mcp",
+      "homepage": "https://glama.ai/mcp/servers/pm3ygrr4aq",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "security",
+        "ai"
+      ],
+      "tags": [
+        "claude"
+      ],
+      "install": {
+        "cli": "# See https://github.com/mcp-hub-corp/mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.640Z"
     },
     {
       "slug": "hydrolix-mcp-hydrolix",
@@ -13738,33 +13913,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-07T08:21:19.206Z"
-    },
-    {
-      "slug": "mockloop-mockloop-mcp",
-      "name": "MockLoop MCP SERVER",
-      "tagline": "A Model Context Protocol server that generates and runs mock API servers from API documentation like OpenAPI/Swagger specs, enabl…",
-      "description": "A Model Context Protocol server that generates and runs mock API servers from API documentation like OpenAPI/Swagger specs, enabling developers and AI assistants to quickly spin up mock backends for development and testing.",
-      "author": "MockLoop",
-      "authorGithub": "MockLoop",
-      "repo": "https://github.com/MockLoop/mockloop-mcp",
-      "homepage": "https://glama.ai/mcp/servers/qvdk7ztgay",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/MockLoop/mockloop-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:31.042Z"
     },
     {
       "slug": "mockzilla-mockzilla-mcp",
@@ -15375,6 +15523,41 @@
       "addedAt": "2026-05-09T07:46:33.813Z"
     },
     {
+      "slug": "openarx-ai-openarx-core",
+      "name": "OpenArx",
+      "tagline": "Open scientific knowledge MCP for AI agents. Three profiles: search (15 tools incl. find_evidence, compare_papers, explore_topic)…",
+      "description": "Open scientific knowledge MCP for AI agents. Three profiles: search (15 tools incl. find_evidence, compare_papers, explore_topic), publish (5 tools for direct submission with AI-assisted review), govern (20 tools for proposals, voting, methodology shaping).",
+      "author": "OpenArx-AI",
+      "authorGithub": "OpenArx-AI",
+      "repo": "https://github.com/OpenArx-AI/openarx-core",
+      "homepage": "https://glama.ai/mcp/servers/q8ejqmqgcd",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "filesystem",
+        "knowledge",
+        "research",
+        "search",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "knowledge"
+      ],
+      "install": {
+        "cli": "# See https://github.com/OpenArx-AI/openarx-core#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "Apache 2.0",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.640Z"
+    },
+    {
       "slug": "karchinlab-oc-mcp",
       "name": "OpenCRAVAT",
       "tagline": "Annotate variants by with a deep and rich set of data. Can annotate: genetic change, rsID, CAid, HGVS (g./c./p.), protein change.",
@@ -15514,35 +15697,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:05.976Z"
-    },
-    {
-      "slug": "opentofu-opentofu-mcp-server",
-      "name": "OpenTofu MCP SERVER",
-      "tagline": "A Model Context Protocol server that allows AI assistants to search for and retrieve information about OpenTofu providers, module…",
-      "description": "A Model Context Protocol server that allows AI assistants to search for and retrieve information about OpenTofu providers, modules, resources, and data sources from the OpenTofu Registry.",
-      "author": "opentofu",
-      "authorGithub": "opentofu",
-      "repo": "https://github.com/opentofu/opentofu-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/ltz4b4vinr",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/opentofu/opentofu-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "Mozilla Public License 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.359Z"
     },
     {
       "slug": "openzeppelin-contracts-wizard",
@@ -15959,34 +16113,6 @@
       "addedAt": "2026-05-09T07:46:59.469Z"
     },
     {
-      "slug": "panther-labs-mcp-panther",
-      "name": "Panther MCP SERVER",
-      "tagline": "mcp-panther",
-      "description": "mcp-panther",
-      "author": "panther-labs",
-      "authorGithub": "panther-labs",
-      "repo": "https://github.com/panther-labs/mcp-panther",
-      "homepage": "https://glama.ai/mcp/servers/p81h4ybkkl",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/panther-labs/mcp-panther#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "Apache 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.358Z"
-    },
-    {
       "slug": "cdatasoftware-parquet-mcp-server-by-cdata",
       "name": "Parquet MCP SERVER by CData",
       "tagline": "Parquet MCP Server by CData",
@@ -16158,6 +16284,33 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:12.120Z"
+    },
+    {
+      "slug": "csoai-org-performance-ai-mcp",
+      "name": "Performance AI MCP",
+      "tagline": "Performance AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Performance AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/performance-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/bbc2rx7fb2",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/performance-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
     },
     {
       "slug": "perplexity",
@@ -16488,6 +16641,33 @@
       "addedAt": "2026-05-09T07:47:03.559Z"
     },
     {
+      "slug": "csoai-org-plagiarism-checker-ai-mcp",
+      "name": "Plagiarism Checker AI MCP",
+      "tagline": "Plagiarism Checker AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Plagiarism Checker AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/fapxh31ely",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
+    },
+    {
       "slug": "plainsignal-plainsignal-mcp",
       "name": "PlainSignal MCP SERVER",
       "tagline": "Provides tools for retrieving analytics reports and metrics from PlainSignal through the Model Context Protocol (MCP).",
@@ -16702,34 +16882,6 @@
       "addedAt": "2026-05-09T07:47:00.409Z"
     },
     {
-      "slug": "massive-com-mcp-massive",
-      "name": "Polygon io MCP SERVER",
-      "tagline": "Polygon-io MCP Server",
-      "description": "Polygon-io MCP Server",
-      "author": "massive-com",
-      "authorGithub": "massive-com",
-      "repo": "https://github.com/massive-com/mcp_massive",
-      "homepage": "https://glama.ai/mcp/servers/be60sf6xe2",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/massive-com/mcp_massive#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.850Z"
-    },
-    {
       "slug": "polyneural-ai-mcpb",
       "name": "PolyNeural.ai Knowledge Graph MCP Bundle",
       "tagline": "Provides AI agents with persistent memory and knowledge management through a comprehensive knowledge graph platform. Enables stor…",
@@ -16762,6 +16914,33 @@
       "authRequired": true,
       "source": "glama",
       "addedAt": "2026-04-26T18:54:15.879Z"
+    },
+    {
+      "slug": "csoai-org-pomodoro-ai-mcp",
+      "name": "Pomodoro AI MCP",
+      "tagline": "Pomodoro AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Pomodoro AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/pomodoro-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/tshq5o4xfn",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/pomodoro-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.315Z"
     },
     {
       "slug": "portainer-portainer-mcp",
@@ -17052,6 +17231,34 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:05.743Z"
+    },
+    {
+      "slug": "csoai-org-proofof-ai-mcp",
+      "name": "Proofof AI MCP",
+      "tagline": "Proofof AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Proofof AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/proofof-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/uacx68qg9c",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/proofof-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
     },
     {
       "slug": "proofstreamai-proofstream-mcp",
@@ -17367,6 +17574,34 @@
       "addedAt": "2026-05-09T07:47:07.158Z"
     },
     {
+      "slug": "csoai-org-qr-code-ai-mcp",
+      "name": "QR Code AI MCP",
+      "tagline": "QR Code AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "QR Code AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/qr-code-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/n2hsq1uuts",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/qr-code-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.316Z"
+    },
+    {
       "slug": "cdatasoftware-quickbase-mcp-server-by-cdata",
       "name": "Quickbase MCP SERVER by CData",
       "tagline": "This read-only MCP Server allows you to connect to Quickbase data from Claude Desktop through CData JDBC Drivers. Free (beta) rea…",
@@ -17421,33 +17656,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:58.255Z"
-    },
-    {
-      "slug": "cdatasoftware-quickbooks-online-mcp-server-by-cdata",
-      "name": "QuickBooks Online MCP SERVER by CData",
-      "tagline": "QuickBooks Online MCP Server by CData",
-      "description": "QuickBooks Online MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/quickbooks-online-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/ffe6wbycb6",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/quickbooks-online-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
     },
     {
       "slug": "quickchatai-quickchat-ai-mcp",
@@ -18537,33 +18745,6 @@
       "addedAt": "2026-05-09T07:46:58.250Z"
     },
     {
-      "slug": "cdatasoftware-intacct-mcp-server-by-cdata",
-      "name": "Sage Intacct MCP SERVER by CData",
-      "tagline": "Sage Intacct MCP Server by CData",
-      "description": "Sage Intacct MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/intacct-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/c07qxrtv78",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/intacct-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
-    },
-    {
       "slug": "saleor-saleor-mcp",
       "name": "Saleor MCP SERVER",
       "tagline": "Enables AI assistants to interact with Saleor Commerce instances to fetch data about products, customers, and orders through a re…",
@@ -19038,6 +19219,34 @@
       "addedAt": "2026-05-07T08:21:29.229Z"
     },
     {
+      "slug": "csoai-org-security-scanner-ai-mcp",
+      "name": "Security Scanner AI MCP",
+      "tagline": "Security Scanner AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "Security Scanner AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/security-scanner-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/di4zgidfc6",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "security",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/security-scanner-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.314Z"
+    },
+    {
       "slug": "sekrdcom-sekrd-mcp-ts",
       "name": "Sekrd Security Scanner",
       "tagline": "Enables deep security auditing of web applications directly from AI IDEs including Cursor and Claude Code. Scans URLs for vulnera…",
@@ -19251,33 +19460,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-04-26T18:53:48.983Z"
-    },
-    {
-      "slug": "cdatasoftware-sharepoint-excel-services-mcp-server-by-cdata",
-      "name": "SharePoint Excel Services MCP SERVER by CData",
-      "tagline": "SharePoint Excel Services MCP Server by CData",
-      "description": "SharePoint Excel Services MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/sharepoint-excel-services-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/blljekxu9w",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/sharepoint-excel-services-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:30.823Z"
     },
     {
       "slug": "cdatasoftware-sharepoint-mcp-server-by-cdata",
@@ -19693,33 +19875,6 @@
       "addedAt": "2026-05-09T07:46:37.447Z"
     },
     {
-      "slug": "cdatasoftware-snowflake-mcp-server-by-cdata",
-      "name": "Snowflake MCP SERVER by CData",
-      "tagline": "Snowflake MCP Server by CData",
-      "description": "Snowflake MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/snowflake-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/uw46lx7uxh",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "database"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/snowflake-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
-    },
-    {
       "slug": "clharman-circuit-mcp",
       "name": "Snowfort Circuit MCP",
       "tagline": "A comprehensive Model Context Protocol (MCP) server suite that enables AI coding agents to automate both web browsers and Electro…",
@@ -19778,6 +19933,34 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-07T08:21:30.615Z"
+    },
+    {
+      "slug": "csoai-org-soc2-compliance-ai-mcp",
+      "name": "SOC2 Compliance AI MCP",
+      "tagline": "SOC2 Compliance AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "description": "SOC2 Compliance AI - MCP server providing AI-powered tools and automation by MEOK AI Labs",
+      "author": "CSOAI-ORG",
+      "authorGithub": "CSOAI-ORG",
+      "repo": "https://github.com/CSOAI-ORG/soc2-compliance-ai-mcp",
+      "homepage": "https://glama.ai/mcp/servers/p827prrfsu",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/CSOAI-ORG/soc2-compliance-ai-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:09.607Z"
     },
     {
       "slug": "socialcrawl-mcp",
@@ -20327,6 +20510,38 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-07T08:21:29.624Z"
+    },
+    {
+      "slug": "structured-sh-structured",
+      "name": "Structured sh",
+      "tagline": "MCP server providing managed persistent memory for AI agents. Read and write structured state across sessions, tools, and restart…",
+      "description": "MCP server providing managed persistent memory for AI agents. Read and write structured state across sessions, tools, and restarts at 1000+ requests per second, with no infrastructure to self-host or operate.",
+      "author": "structured-sh",
+      "authorGithub": "structured-sh",
+      "repo": "https://github.com/structured-sh/structured",
+      "homepage": "https://glama.ai/mcp/servers/n7bbpv9qae",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "memory",
+        "ai"
+      ],
+      "tags": [
+        "rest",
+        "agents",
+        "memory"
+      ],
+      "install": {
+        "cli": "# See https://github.com/structured-sh/structured#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "Apache 2.0",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.641Z"
     },
     {
       "slug": "studiomeyer-io-studiomeyer-crm",
@@ -21192,33 +21407,6 @@
       "addedAt": "2026-05-12T08:29:59.342Z"
     },
     {
-      "slug": "cdatasoftware-teradata-mcp-server-by-cdata",
-      "name": "Teradata MCP SERVER by CData",
-      "tagline": "Teradata MCP Server by CData",
-      "description": "Teradata MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/teradata-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/zr08uap5bd",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/teradata-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
-    },
-    {
       "slug": "tesults-tesults-mcp",
       "name": "Tesults MCP",
       "tagline": "Connect AI agents to your test results, insights, and targets. Query test runs, failures, flaky tests, and regressions across fra…",
@@ -21608,34 +21796,6 @@
       "addedAt": "2026-05-12T08:29:13.770Z"
     },
     {
-      "slug": "tigrisdata-tigris-mcp-server",
-      "name": "Tigris MCP SERVER",
-      "tagline": "Tigris MCP Server",
-      "description": "Tigris MCP Server",
-      "author": "tigrisdata",
-      "authorGithub": "tigrisdata",
-      "repo": "https://github.com/tigrisdata/tigris-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/orr5mp9il2",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/tigrisdata/tigris-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.850Z"
-    },
-    {
       "slug": "timepointai-timepoint-mcp",
       "name": "Timepoint MCP",
       "tagline": "Provides structured access to a temporal knowledge platform for searching historical events and browsing a causal graph of over 2…",
@@ -21929,6 +22089,35 @@
       "authRequired": true,
       "source": "glama",
       "addedAt": "2026-05-09T07:46:13.729Z"
+    },
+    {
+      "slug": "tubealfred-mcp",
+      "name": "TubeAlfred MCP SERVER",
+      "tagline": "Bridges MCP clients to the TubeAlfred YouTube API, enabling tools for video details, transcripts, comments, search, and channel i…",
+      "description": "Bridges MCP clients to the TubeAlfred YouTube API, enabling tools for video details, transcripts, comments, search, and channel info.",
+      "author": "tubealfred",
+      "authorGithub": "tubealfred",
+      "repo": "https://github.com/tubealfred/mcp",
+      "homepage": "https://glama.ai/mcp/servers/nirzeqq54n",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "search",
+        "video"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/tubealfred/mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-13T08:36:07.641Z"
     },
     {
       "slug": "tunzaa-tunzaa-mcp",
@@ -22285,34 +22474,6 @@
       "license": "ISC",
       "source": "glama",
       "addedAt": "2026-05-12T08:30:03.568Z"
-    },
-    {
-      "slug": "variflight-tripmatch-mcp",
-      "name": "Variflight Tripmatch MCP SERVER",
-      "tagline": "Provides tools to query flight and train information including flight searches, train tickets, weather forecasts, and transfer op…",
-      "description": "Provides tools to query flight and train information including flight searches, train tickets, weather forecasts, and transfer options between different transportation modes.",
-      "author": "variflight",
-      "authorGithub": "variflight",
-      "repo": "https://github.com/variflight/tripmatch-mcp",
-      "homepage": "https://glama.ai/mcp/servers/ez9zb73z97",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/variflight/tripmatch-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "ISC",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.358Z"
     },
     {
       "slug": "vectara-vectara-mcp",
@@ -23148,33 +23309,6 @@
       "addedAt": "2026-05-09T07:46:37.042Z"
     },
     {
-      "slug": "cdatasoftware-workday-mcp-server-by-cdata",
-      "name": "Workday MCP SERVER by CData",
-      "tagline": "Workday MCP Server by CData",
-      "description": "Workday MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/workday-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/xssv0ju19n",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/workday-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
-    },
-    {
       "slug": "workopia-ai-resume-tailor",
       "name": "Workopia",
       "tagline": "AI job search, resume builder, and career advice via MCP",
@@ -23351,34 +23485,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:08.798Z"
-    },
-    {
-      "slug": "cdatasoftware-xml-documents-mcp-server-by-cdata",
-      "name": "XML Documents MCP SERVER by CData",
-      "tagline": "XML Documents MCP Server by CData",
-      "description": "XML Documents MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/xml-documents-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/r36ri9m0ul",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/xml-documents-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
     },
     {
       "slug": "yandex-yandex-search-mcp-server",
@@ -23584,34 +23690,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-09T07:46:58.251Z"
-    },
-    {
-      "slug": "yugabyte-yugabytedb-mcp-server",
-      "name": "YugabyteDB MCP SERVER",
-      "tagline": "An MCP server implementation that allows Large Language Models to directly interact with YugabyteDB databases, supporting table l…",
-      "description": "An MCP server implementation that allows Large Language Models to directly interact with YugabyteDB databases, supporting table listing and read-only SQL queries.",
-      "author": "yugabyte",
-      "authorGithub": "yugabyte",
-      "repo": "https://github.com/yugabyte/yugabytedb-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/d3czjo8q6k",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "database"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/yugabyte/yugabytedb-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "Apache 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:33.358Z"
     },
     {
       "slug": "zadarastorage-zadara-mcp",
@@ -23884,33 +23962,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-12T08:29:12.120Z"
-    },
-    {
-      "slug": "cdatasoftware-zoho-crm-mcp-server-by-cdata",
-      "name": "Zoho CRM MCP SERVER by CData",
-      "tagline": "Zoho CRM MCP Server by CData",
-      "description": "Zoho CRM MCP Server by CData",
-      "author": "CDataSoftware",
-      "authorGithub": "CDataSoftware",
-      "repo": "https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata",
-      "homepage": "https://glama.ai/mcp/servers/awtfei20xb",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-11T09:28:35.851Z"
     },
     {
       "slug": "zimsoft-webprinter-mcp",
