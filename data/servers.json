@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T09:40:17.507Z",
+  "generatedAt": "2026-05-30T08:19:06.921Z",
   "totalCount": 800,
   "servers": [
     {
@@ -970,6 +970,36 @@
       "addedAt": "2026-05-26T09:39:05.125Z"
     },
     {
+      "slug": "agirails-agirails-mcp-server",
+      "name": "@agirails/MCP SERVER",
+      "tagline": "Enables AI agents to discover, negotiate, and settle payments on the AGIRAILS network directly from MCP-compatible editors, suppo…",
+      "description": "Enables AI agents to discover, negotiate, and settle payments on the AGIRAILS network directly from MCP-compatible editors, supporting escrow for complex jobs and instant x402 payments.",
+      "author": "agirails",
+      "authorGithub": "agirails",
+      "repo": "https://github.com/agirails/agirails-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/tpt0ni6t7v",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/agirails/agirails-mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "Apache 2.0",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.950Z"
+    },
+    {
       "slug": "getaiready-aiready-ast-mcp-server",
       "name": "@aiready/ast MCP SERVER",
       "tagline": "AST-aware TypeScript/JavaScript codebase exploration for AI agents, providing high-precision symbol resolution, reference finding…",
@@ -1421,34 +1451,6 @@
       "addedAt": "2026-05-29T09:39:45.955Z"
     },
     {
-      "slug": "lpm-dev-mcp-server",
-      "name": "@lpm registry/MCP SERVER",
-      "tagline": "MCP server for the LPM package registry, enabling AI tools to search, browse source code, install packages, check quality, and mo…",
-      "description": "MCP server for the LPM package registry, enabling AI tools to search, browse source code, install packages, check quality, and more.",
-      "author": "lpm-dev",
-      "authorGithub": "lpm-dev",
-      "repo": "https://github.com/lpm-dev/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/tadhyqecjk",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "search",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/lpm-dev/mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "ISC",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.947Z"
-    },
-    {
       "slug": "manasdb-mcp-server",
       "name": "@manasdb/MCP SERVER",
       "tagline": "Provides a plug-and-play persistent memory layer for MCP-compatible AI assistants, enabling them to store, retrieve, and delete m…",
@@ -1508,34 +1510,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:46.922Z"
-    },
-    {
-      "slug": "mesheshq-meshes-mcp-server",
-      "name": "@mesheshq/MCP SERVER",
-      "tagline": "Enables emitting product events, managing workspaces, routing rules, and integration connections for the Meshes universal integra…",
-      "description": "Enables emitting product events, managing workspaces, routing rules, and integration connections for the Meshes universal integration layer.",
-      "author": "mesheshq",
-      "authorGithub": "mesheshq",
-      "repo": "https://github.com/mesheshq/meshes-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/dbdvrwr5w7",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/mesheshq/meshes-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.311Z"
     },
     {
       "slug": "neurynae-toolcairn-mcp",
@@ -1963,6 +1937,33 @@
       "addedAt": "2026-05-29T09:39:45.442Z"
     },
     {
+      "slug": "squirex-dev-squirex-mcp",
+      "name": "@squirex.dev/MCP SERVER",
+      "tagline": "MCP server that scans Salesforce Agentforce metadata for security vulnerabilities using 61+ SAST rules, integrating into AI codin…",
+      "description": "MCP server that scans Salesforce Agentforce metadata for security vulnerabilities using 61+ SAST rules, integrating into AI coding workflows to guard against OWASP LLM top 10 risks.",
+      "author": "SquireX-dev",
+      "authorGithub": "SquireX-dev",
+      "repo": "https://github.com/SquireX-dev/squirex-mcp",
+      "homepage": "https://glama.ai/mcp/servers/dq7z74o7qc",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "security",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/SquireX-dev/squirex-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.953Z"
+    },
+    {
       "slug": "tailor-platform-tailor-mcp",
       "name": "@tailor platform/tailor MCP",
       "tagline": "MCP server for managing Tailor Platform resources via tools like create, update, destroy, and search resources, as well as GraphQ…",
@@ -2052,6 +2053,38 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-27T09:32:27.834Z"
+    },
+    {
+      "slug": "voxellinc-forge-mcp",
+      "name": "@voxell/forge MCP",
+      "tagline": "MCP server for Forge's hosted text-embedding API, providing tools to embed text into vectors and list available models.",
+      "description": "MCP server for Forge's hosted text-embedding API, providing tools to embed text into vectors and list available models.",
+      "author": "VoxellInc",
+      "authorGithub": "VoxellInc",
+      "repo": "https://github.com/VoxellInc/forge-mcp",
+      "homepage": "https://glama.ai/mcp/servers/t9phm4l8rm",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "memory",
+        "ai"
+      ],
+      "tags": [
+        "embedding",
+        "vector"
+      ],
+      "install": {
+        "cli": "# See https://github.com/VoxellInc/forge-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.192Z"
     },
     {
       "slug": "voxos-ai-inc-clink-mcp-server",
@@ -2910,6 +2943,35 @@
       "addedAt": "2026-05-29T09:39:23.722Z"
     },
     {
+      "slug": "airmail-airmail-mcp",
+      "name": "Airmail MCP",
+      "tagline": "MCP server for Airmail — manage emails, calendars, contacts, and more from AI assistants.",
+      "description": "MCP server for Airmail — manage emails, calendars, contacts, and more from AI assistants.",
+      "author": "Airmail",
+      "authorGithub": "Airmail",
+      "repo": "https://github.com/Airmail/airmail-mcp",
+      "homepage": "https://glama.ai/mcp/servers/w3f07llo93",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "messaging",
+        "productivity",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/Airmail/airmail-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.675Z"
+    },
+    {
       "slug": "alephantai-alephant-mcp",
       "name": "Alephant MCP",
       "tagline": "Alephant MCP server for AI cost control, BYO-key routing, 50+ providers, and 320+ models.",
@@ -3093,6 +3155,36 @@
       "addedAt": "2026-05-15T08:40:51.337Z"
     },
     {
+      "slug": "altrsoftware-altr-mcp-server",
+      "name": "ALTR MCP SERVER",
+      "tagline": "Enables AI assistants to manage data security on the ALTR platform for Snowflake, Databricks, and OLTP databases, offering 99 too…",
+      "description": "Enables AI assistants to manage data security on the ALTR platform for Snowflake, Databricks, and OLTP databases, offering 99 tools across 10 domains including tag masking, policies, classification, and access governance.",
+      "author": "altrsoftware",
+      "authorGithub": "altrsoftware",
+      "repo": "https://github.com/altrsoftware/altr-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/gc9s2ur1ks",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "database",
+        "security",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/altrsoftware/altr-mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "GPL 3.0",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.676Z"
+    },
+    {
       "slug": "alumnx-ai-labs-agrigpt-backend-mcp",
       "name": "Alumnx MCP SERVER",
       "tagline": "Provides agricultural intelligence tools for pest/disease lookup, government scheme discovery, and SME knowledge retrieval via se…",
@@ -3215,62 +3307,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:54.220Z"
-    },
-    {
-      "slug": "amiyabot-amiya-bot-mcp-server",
-      "name": "AmiyaBot MCP SERVER",
-      "tagline": "Provides MCP server and CLI for querying Arknights game data, including operator skills, glossary, and resource updates.",
-      "description": "Provides MCP server and CLI for querying Arknights game data, including operator skills, glossary, and resource updates.",
-      "author": "AmiyaBot",
-      "authorGithub": "AmiyaBot",
-      "repo": "https://github.com/AmiyaBot/Amiya-Bot-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/hnfx0jcszp",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/AmiyaBot/Amiya-Bot-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.762Z"
-    },
-    {
-      "slug": "gsa-tts-usdc-arc-mcp-demo",
-      "name": "analytics.usa.gov MCP SERVER",
-      "tagline": "Enables LLMs to query and analyze government website analytics from analytics.usa.gov via the Model Context Protocol, supporting …",
-      "description": "Enables LLMs to query and analyze government website analytics from analytics.usa.gov via the Model Context Protocol, supporting single report, multiple reports, and aggregation tools.",
-      "author": "GSA-TTS",
-      "authorGithub": "GSA-TTS",
-      "repo": "https://github.com/GSA-TTS/usdc-arc-mcp-demo",
-      "homepage": "https://glama.ai/mcp/servers/nnk0wm402n",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "voice",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/GSA-TTS/usdc-arc-mcp-demo#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.764Z"
     },
     {
       "slug": "anysearch-ai-anysearch-mcp-server",
@@ -3676,6 +3712,36 @@
       "addedAt": "2026-05-29T09:39:56.174Z"
     },
     {
+      "slug": "archonics-mcp-audit",
+      "name": "Archonics MCP Audit SERVER",
+      "tagline": "Free MCP tools for context engineering audits of AI agents, offering on-demand analysis of system prompts, tool definitions, and …",
+      "description": "Free MCP tools for context engineering audits of AI agents, offering on-demand analysis of system prompts, tool definitions, and context packing.",
+      "author": "archonics",
+      "authorGithub": "archonics",
+      "repo": "https://github.com/archonics/mcp-audit",
+      "homepage": "https://glama.ai/mcp/servers/mwtbcx2dz0",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/archonics/mcp-audit#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.674Z"
+    },
+    {
       "slug": "arcjet-mcp",
       "name": "Arcjet MCP SERVER",
       "tagline": "Provides AI agents with context for integrating Arcjet security features like bot detection and rate limiting into applications. …",
@@ -3884,34 +3950,6 @@
       "addedAt": "2026-05-29T09:40:00.989Z"
     },
     {
-      "slug": "astroway-astroway-mcp",
-      "name": "astroway MCP",
-      "tagline": "Comprehensive astrology MCP exposing every endpoint of the AstroWay Calculation API — natal charts, synastry, transits, Vedic das…",
-      "description": "Comprehensive astrology MCP exposing every endpoint of the AstroWay Calculation API — natal charts, synastry, transits, Vedic dashas, Tarot,\nNumerology, Human Design. Sub-arcsecond Swiss Ephemeris precision, 10 000 free credits per month.",
-      "author": "astroway",
-      "authorGithub": "astroway",
-      "repo": "https://github.com/astroway/astroway-mcp",
-      "homepage": "https://glama.ai/mcp/servers/hvymcxkdx8",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "design"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/astroway/astroway-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.763Z"
-    },
-    {
       "slug": "atmospore-atmospore-mcp",
       "name": "Atmospore",
       "tagline": "Per-species pollen forecasts at any point on Earth, seven days ahead. Free tier covers casual use.",
@@ -3938,34 +3976,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:46.762Z"
-    },
-    {
-      "slug": "kontext-security-attestable-mcp-server",
-      "name": "attestable MCP SERVER",
-      "tagline": "Enables remote attestation of MCP servers using Intel SGX and RA-TLS, allowing clients to verify the exact code running on the se…",
-      "description": "Enables remote attestation of MCP servers using Intel SGX and RA-TLS, allowing clients to verify the exact code running on the server.",
-      "author": "kontext-security",
-      "authorGithub": "kontext-security",
-      "repo": "https://github.com/kontext-security/attestable-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/lsurk8h25l",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search",
-        "security"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/kontext-security/attestable-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.428Z"
     },
     {
       "slug": "authensor-authensor",
@@ -4276,34 +4286,6 @@
       "addedAt": "2026-05-28T09:49:29.111Z"
     },
     {
-      "slug": "aztecprotocol-mcp-server",
-      "name": "Aztec MCP SERVER",
-      "tagline": "Provides local access to Aztec documentation, examples, and source code via cloned repositories, with optional semantic search fo…",
-      "description": "Provides local access to Aztec documentation, examples, and source code via cloned repositories, with optional semantic search for enhanced querying.",
-      "author": "AztecProtocol",
-      "authorGithub": "AztecProtocol",
-      "repo": "https://github.com/AztecProtocol/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/lxbm5f4w04",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/AztecProtocol/mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.429Z"
-    },
-    {
       "slug": "cdatasoftware-azure-data-lake-storage-mcp-server-by-cdata",
       "name": "Azure Data Lake Storage MCP SERVER by CData",
       "tagline": "Azure Data Lake Storage MCP Server by CData",
@@ -4589,34 +4571,6 @@
       "addedAt": "2026-05-29T09:40:00.448Z"
     },
     {
-      "slug": "bitbankinc-bitbank-mcp-server",
-      "name": "bitbank MCP SERVER",
-      "tagline": "MCP server for bitbank cryptocurrency exchange enabling ticker, candlestick, order book, and transaction data retrieval.",
-      "description": "MCP server for bitbank cryptocurrency exchange enabling ticker, candlestick, order book, and transaction data retrieval.",
-      "author": "bitbankinc",
-      "authorGithub": "bitbankinc",
-      "repo": "https://github.com/bitbankinc/bitbank-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/rjmju8pji1",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/bitbankinc/bitbank-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.310Z"
-    },
-    {
       "slug": "bitgetlimited-agent-hub",
       "name": "Bitget MCP SERVER",
       "tagline": "The official Bitget MCP (Model Context Protocol) server. Gives AI assistants direct, real-time access to the Bitget exchange thro…",
@@ -4702,34 +4656,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:53.438Z"
-    },
-    {
-      "slug": "blockbeatsofficial-blockbeats-mcp",
-      "name": "blockbeats MCP",
-      "tagline": "A crypto data gateway for AI assistants, providing real-time newsflashes, articles, on-chain metrics, ETF flows, stablecoin data,…",
-      "description": "A crypto data gateway for AI assistants, providing real-time newsflashes, articles, on-chain metrics, ETF flows, stablecoin data, macro indicators, and derivatives market data via the BlockBeats Pro API.",
-      "author": "BlockBeatsOfficial",
-      "authorGithub": "BlockBeatsOfficial",
-      "repo": "https://github.com/BlockBeatsOfficial/blockbeats-MCP",
-      "homepage": "https://glama.ai/mcp/servers/qh6u997z0u",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/BlockBeatsOfficial/blockbeats-MCP#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.429Z"
     },
     {
       "slug": "blocklens-blocklens-mcp-server",
@@ -5896,6 +5822,33 @@
       "addedAt": "2026-05-29T09:39:47.261Z"
     },
     {
+      "slug": "coalesce-software-inc-coalesce-transform-mcp",
+      "name": "coalesce transform MCP",
+      "tagline": "MCP server for Coalesce that manages nodes, pipelines, environments, jobs, and runs, and enables project validation, DDL/DML prev…",
+      "description": "MCP server for Coalesce that manages nodes, pipelines, environments, jobs, and runs, and enables project validation, DDL/DML preview, deployment planning, and cloud environment application.",
+      "author": "Coalesce-Software-Inc",
+      "authorGithub": "Coalesce-Software-Inc",
+      "repo": "https://github.com/Coalesce-Software-Inc/coalesce-transform-mcp",
+      "homepage": "https://glama.ai/mcp/servers/u8z0l4ayjr",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/Coalesce-Software-Inc/coalesce-transform-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.953Z"
+    },
+    {
       "slug": "elara-labs-code-context-engine",
       "name": "Code Context Engine",
       "tagline": "Indexes your codebase so AI coding agents can search instead of re-reading files, saving up to 94% of tokens.",
@@ -6612,34 +6565,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:23.535Z"
-    },
-    {
-      "slug": "coze-dev-coze-mcp-server",
-      "name": "coze MCP SERVER",
-      "tagline": "A Model Context Protocol server that provides Coze resources and tools for managing workspaces, bots, and conversations.",
-      "description": "A Model Context Protocol server that provides Coze resources and tools for managing workspaces, bots, and conversations.",
-      "author": "coze-dev",
-      "authorGithub": "coze-dev",
-      "repo": "https://github.com/coze-dev/coze-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/xmrk6ooxiy",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/coze-dev/coze-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.119Z"
     },
     {
       "slug": "cloto-dev-cpersona",
@@ -7590,34 +7515,6 @@
       "addedAt": "2026-05-28T09:49:21.996Z"
     },
     {
-      "slug": "doitintl-doit-mcp-server",
-      "name": "DoiT MCP SERVER",
-      "tagline": "Provides LLMs with access to the DoiT API for managing cloud resources, analyzing costs, and handling support tickets via natural…",
-      "description": "Provides LLMs with access to the DoiT API for managing cloud resources, analyzing costs, and handling support tickets via natural language.",
-      "author": "doitintl",
-      "authorGithub": "doitintl",
-      "repo": "https://github.com/doitintl/doit-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/x1kiappvqx",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/doitintl/doit-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.308Z"
-    },
-    {
       "slug": "dokmatiq-docgen-sdks",
       "name": "Dokmatiq DocGen",
       "tagline": "PDF/DOCX/Excel generation from HTML/Markdown with stationery overlay, ZUGFeRD/XRechnung e-invoicing, digital signing, form fillin…",
@@ -7736,34 +7633,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-25T09:54:03.750Z"
-    },
-    {
-      "slug": "dovetail-dovetail-mcp",
-      "name": "Dovetail MCP SERVER",
-      "tagline": "Connects AI tools to the Dovetail API, enabling them to interact with Dovetail features.",
-      "description": "Connects AI tools to the Dovetail API, enabling them to interact with Dovetail features.",
-      "author": "dovetail",
-      "authorGithub": "dovetail",
-      "repo": "https://github.com/dovetail/dovetail-mcp",
-      "homepage": "https://glama.ai/mcp/servers/uw8n8hjvaa",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/dovetail/dovetail-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.764Z"
     },
     {
       "slug": "the-doxa-way-doxa-mcp-schema",
@@ -9159,6 +9028,33 @@
       "addedAt": "2026-05-22T08:51:58.262Z"
     },
     {
+      "slug": "flowcore-io-mcp-flowcore-platform",
+      "name": "Flowcore Platform MCP SERVER",
+      "tagline": "Enables AI assistants to query and manage Flowcore resources through a structured API.",
+      "description": "Enables AI assistants to query and manage Flowcore resources through a structured API.",
+      "author": "flowcore-io",
+      "authorGithub": "flowcore-io",
+      "repo": "https://github.com/flowcore-io/mcp-flowcore-platform",
+      "homepage": "https://glama.ai/mcp/servers/fwnnopoutr",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/flowcore-io/mcp-flowcore-platform#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.192Z"
+    },
+    {
       "slug": "flowvenue-it-flowvenue-mcp-server",
       "name": "flowvenue MCP SERVER",
       "tagline": "Conversational business process runtime for AI agents with workflow orchestration, enterprise operations, KPI exploration, and pr…",
@@ -9364,36 +9260,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:49.068Z"
-    },
-    {
-      "slug": "foxtrove-foxtrove-voice-mcp",
-      "name": "FoxTrove Voice MCP SERVER",
-      "tagline": "Public read-only MCP server for FoxTrove Voice, enabling LLMs to query call logs, customer records, assistant stats, and analytic…",
-      "description": "Public read-only MCP server for FoxTrove Voice, enabling LLMs to query call logs, customer records, assistant stats, and analytics via secure OAuth.",
-      "author": "FoxTrove",
-      "authorGithub": "FoxTrove",
-      "repo": "https://github.com/FoxTrove/foxtrove-voice-mcp",
-      "homepage": "https://glama.ai/mcp/servers/n0d06x8g9x",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "security",
-        "voice",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/FoxTrove/foxtrove-voice-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.599Z"
     },
     {
       "slug": "groundlight-framegrab-mcp-server",
@@ -11014,6 +10880,39 @@
       "addedAt": "2026-05-29T09:39:49.608Z"
     },
     {
+      "slug": "optisol-business-db-metadata-extractor-mcp",
+      "name": "io.github.Optisol Business/db metadata extractor MCP",
+      "tagline": "Enables extraction and querying of database schema metadata from PostgreSQL, Snowflake, SQL Server, BigQuery, and Oracle database…",
+      "description": "Enables extraction and querying of database schema metadata from PostgreSQL, Snowflake, SQL Server, BigQuery, and Oracle databases, saving results locally for analysis.",
+      "author": "Optisol-Business",
+      "authorGithub": "Optisol-Business",
+      "repo": "https://github.com/Optisol-Business/db-metadata-extractor-mcp",
+      "homepage": "https://glama.ai/mcp/servers/h4o5ceau09",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "database",
+        "developer-tools",
+        "version-control"
+      ],
+      "tags": [
+        "postgres",
+        "github"
+      ],
+      "install": {
+        "cli": "# See https://github.com/Optisol-Business/db-metadata-extractor-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.950Z"
+    },
+    {
       "slug": "unmateria-mcp-access",
       "name": "io.github.unmateria/msaccess database",
       "tagline": "Gives AI assistants full control over Microsoft Access databases, enabling creation and management of forms, VBA, tables, queries…",
@@ -11600,33 +11499,6 @@
       "addedAt": "2026-05-28T09:49:28.222Z"
     },
     {
-      "slug": "karellen-karellen-rr-mcp",
-      "name": "karellen rr MCP",
-      "tagline": "Enables LLM-powered debugging with rr reverse execution, allowing record and replay of program execution via GDB/MI for forward a…",
-      "description": "Enables LLM-powered debugging with rr reverse execution, allowing record and replay of program execution via GDB/MI for forward and reverse state inspection.",
-      "author": "karellen",
-      "authorGithub": "karellen",
-      "repo": "https://github.com/karellen/karellen-rr-mcp",
-      "homepage": "https://glama.ai/mcp/servers/n8ozage41i",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/karellen/karellen-rr-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "Apache 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.947Z"
-    },
-    {
       "slug": "kasperskylab-threat-intelligence",
       "name": "Kaspersky OpenTIP MCP SERVER",
       "tagline": "Kaspersky OpenTIP Model Context Protocol Server. This server gives access to Kaspersky OpenTIP API to agentic applications.",
@@ -11775,32 +11647,32 @@
       "addedAt": "2026-05-29T09:39:55.661Z"
     },
     {
-      "slug": "kintone-mcp-server",
-      "name": "kintone MCP SERVER",
-      "tagline": "Official MCP server for kintone, enabling AI assistants to manage kintone apps, records, and settings through natural language.",
-      "description": "Official MCP server for kintone, enabling AI assistants to manage kintone apps, records, and settings through natural language.",
-      "author": "kintone",
-      "authorGithub": "kintone",
-      "repo": "https://github.com/kintone/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/yg9ew4vci7",
+      "slug": "kilo-org-kilo-dev-mcp-server",
+      "name": "kilo dev MCP SERVER",
+      "tagline": "An MCP server for internationalization (i18n) tasks, providing tools to translate, move, list, and remove translation keys in JSO…",
+      "description": "An MCP server for internationalization (i18n) tasks, providing tools to translate, move, list, and remove translation keys in JSON files for the Kilo Code extension.",
+      "author": "Kilo-Org",
+      "authorGithub": "Kilo-Org",
+      "repo": "https://github.com/Kilo-Org/kilo-dev-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/q6alqlnz3l",
       "runtime": "unknown",
       "transports": [
-        "http",
         "stdio"
       ],
       "categories": [
-        "ai"
+        "filesystem",
+        "productivity"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/kintone/mcp-server#readme for the canonical install command."
+        "cli": "# See https://github.com/Kilo-Org/kilo-dev-mcp-server#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
-      "authRequired": false,
-      "license": "Apache 2.0",
+      "authRequired": true,
+      "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.119Z"
+      "addedAt": "2026-05-30T08:19:06.413Z"
     },
     {
       "slug": "blackwell-systems-knowing",
@@ -11861,6 +11733,97 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:51.937Z"
+    },
+    {
+      "slug": "kondukt-dev-core",
+      "name": "Kondukt",
+      "tagline": "A developer toolkit for MCP servers that enables testing, validation, debugging, and scaffolding, and can be used as an MCP serve…",
+      "description": "A developer toolkit for MCP servers that enables testing, validation, debugging, and scaffolding, and can be used as an MCP server for AI agents.",
+      "author": "kondukt-dev",
+      "authorGithub": "kondukt-dev",
+      "repo": "https://github.com/kondukt-dev/core",
+      "homepage": "https://glama.ai/mcp/servers/hoym7ml785",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/kondukt-dev/core#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.953Z"
+    },
+    {
+      "slug": "kreatospace-mcp",
+      "name": "Kreato MCP SERVER",
+      "tagline": "Enables AI agents to perform Web3 creator monetization actions like tipping creators, buying digital products, and managing membe…",
+      "description": "Enables AI agents to perform Web3 creator monetization actions like tipping creators, buying digital products, and managing memberships through natural language.",
+      "author": "kreatospace",
+      "authorGithub": "kreatospace",
+      "repo": "https://github.com/kreatospace/mcp",
+      "homepage": "https://glama.ai/mcp/servers/wkwsz2tqtn",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "version-control",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/kreatospace/mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.192Z"
+    },
+    {
+      "slug": "krillto-mcp-server",
+      "name": "Krill.to MCP SERVER",
+      "tagline": "Enables AI agents to search and manage Twitter/X bookmarks via krill.to.",
+      "description": "Enables AI agents to search and manage Twitter/X bookmarks via krill.to.",
+      "author": "krillto",
+      "authorGithub": "krillto",
+      "repo": "https://github.com/krillto/mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/cqmhpxfr6i",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "search",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/krillto/mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.953Z"
     },
     {
       "slug": "krystalview-krystalview-mcp",
@@ -12355,6 +12318,36 @@
       "addedAt": "2026-05-26T09:39:05.126Z"
     },
     {
+      "slug": "listbee-dev-listbee-mcp",
+      "name": "listbee MCP",
+      "tagline": "Enables AI agents to create and manage sellable listings, handle orders, and integrate Stripe payments through natural language u…",
+      "description": "Enables AI agents to create and manage sellable listings, handle orders, and integrate Stripe payments through natural language using ListBee's API.",
+      "author": "listbee-dev",
+      "authorGithub": "listbee-dev",
+      "repo": "https://github.com/listbee-dev/listbee-mcp",
+      "homepage": "https://glama.ai/mcp/servers/n2tyk2eqn1",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/listbee-dev/listbee-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "Apache 2.0",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.676Z"
+    },
+    {
       "slug": "litopys-dev-litopys",
       "name": "litopys",
       "tagline": "Persistent graph-based memory for AI agents, stored as plain markdown — no vector DB. Typed nodes and 11 relation types via 5 MCP…",
@@ -12662,34 +12655,6 @@
       "addedAt": "2026-05-19T09:31:21.027Z"
     },
     {
-      "slug": "lucille-protocol-lucille-mcp-server",
-      "name": "Lucille MCP SERVER",
-      "tagline": "MCP server for Lucille Protocol — let your AI agent play the game, win rewards, and earn NFTs on Base.",
-      "description": "MCP server for Lucille Protocol — let your AI agent play the game, win rewards, and earn NFTs on Base.",
-      "author": "lucille-protocol",
-      "authorGithub": "lucille-protocol",
-      "repo": "https://github.com/lucille-protocol/lucille-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/qw8v6ehhmh",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/lucille-protocol/lucille-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.598Z"
-    },
-    {
       "slug": "lusha-oss-lusha-public-api-mcp",
       "name": "Lusha MCP SERVER",
       "tagline": "Enables AI agents to perform comprehensive person and company lookups by integrating directly with the Lusha API for business con…",
@@ -12994,33 +12959,6 @@
       "addedAt": "2026-05-29T09:39:47.075Z"
     },
     {
-      "slug": "getblock-io-mcp-server",
-      "name": "MCP GetBlock SERVER",
-      "tagline": "Enables querying blockchain data from Ethereum and Solana via GetBlock.io API, including wallet balances, transactions, gas price…",
-      "description": "Enables querying blockchain data from Ethereum and Solana via GetBlock.io API, including wallet balances, transactions, gas prices, and account information.",
-      "author": "GetBlock-io",
-      "authorGithub": "GetBlock-io",
-      "repo": "https://github.com/GetBlock-io/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/tavrs6ujfx",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/GetBlock-io/mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.764Z"
-    },
-    {
       "slug": "hermesagent-hermesforge-mcp",
       "name": "MCP hermes",
       "tagline": "Website screenshots and chats/graphs",
@@ -13292,32 +13230,34 @@
       "addedAt": "2026-05-29T09:39:52.728Z"
     },
     {
-      "slug": "ladybugdb-mcp-server-ladybug",
-      "name": "MCP SERVER ladybug",
-      "tagline": "Enables AI Assistants and IDEs to interact with LadybugDB graph databases using Cypher queries.",
-      "description": "Enables AI Assistants and IDEs to interact with LadybugDB graph databases using Cypher queries.",
-      "author": "LadybugDB",
-      "authorGithub": "LadybugDB",
-      "repo": "https://github.com/LadybugDB/mcp-server-ladybug",
-      "homepage": "https://glama.ai/mcp/servers/oma9q3d0e5",
+      "slug": "kinthaiofficial-mcp-server-deerflow-kinthai",
+      "name": "MCP SERVER deerflow kinthai",
+      "tagline": "Exposes DeerFlow's multi-agent capabilities (deep research, data analysis, chart visualization, PPT/image generation, consulting)…",
+      "description": "Exposes DeerFlow's multi-agent capabilities (deep research, data analysis, chart visualization, PPT/image generation, consulting) via the Model Context Protocol, enabling any MCP client to invoke these skills through a thin server wrapper.",
+      "author": "kinthaiofficial",
+      "authorGithub": "kinthaiofficial",
+      "repo": "https://github.com/kinthaiofficial/mcp-server-deerflow-kinthai",
+      "homepage": "https://glama.ai/mcp/servers/uzauf4et8h",
       "runtime": "unknown",
       "transports": [
         "http",
         "stdio"
       ],
       "categories": [
+        "research",
+        "search",
         "ai"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/LadybugDB/mcp-server-ladybug#readme for the canonical install command."
+        "cli": "# See https://github.com/kinthaiofficial/mcp-server-deerflow-kinthai#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
       "authRequired": false,
       "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.428Z"
+      "addedAt": "2026-05-30T08:19:05.674Z"
     },
     {
       "slug": "mcpindex-ai-mcp-server-mcpindex",
@@ -13352,32 +13292,32 @@
       "addedAt": "2026-05-28T09:49:28.672Z"
     },
     {
-      "slug": "decentralized-usd-mcp-server-usdd",
-      "name": "MCP SERVER usdd",
-      "tagline": "Enables management of USDD protocol vaults, PSM swaps, savings, and token transfers across TRON, Ethereum, and BSC, plus protocol…",
-      "description": "Enables management of USDD protocol vaults, PSM swaps, savings, and token transfers across TRON, Ethereum, and BSC, plus protocol analytics and treasury insights.",
-      "author": "decentralized-usd",
-      "authorGithub": "decentralized-usd",
-      "repo": "https://github.com/decentralized-usd/mcp-server-usdd",
-      "homepage": "https://glama.ai/mcp/servers/o54wmdh4zr",
+      "slug": "pdfnoodle-mcp-server-pdfnoodle",
+      "name": "MCP SERVER pdfnoodle",
+      "tagline": "Enables AI assistants to generate PDF documents from templates or raw HTML using natural language, with tools for template creati…",
+      "description": "Enables AI assistants to generate PDF documents from templates or raw HTML using natural language, with tools for template creation, PDF generation, and utility operations.",
+      "author": "pdfnoodle",
+      "authorGithub": "pdfnoodle",
+      "repo": "https://github.com/pdfnoodle/mcp-server-pdfnoodle",
+      "homepage": "https://glama.ai/mcp/servers/bqwyvlf34l",
       "runtime": "unknown",
       "transports": [
         "http",
         "stdio"
       ],
       "categories": [
-        "other"
+        "ai"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/decentralized-usd/mcp-server-usdd#readme for the canonical install command."
+        "cli": "# See https://github.com/pdfnoodle/mcp-server-pdfnoodle#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
-      "authRequired": false,
+      "authRequired": true,
       "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.118Z"
+      "addedAt": "2026-05-30T08:19:06.195Z"
     },
     {
       "slug": "sparkit-science-sparkit-mcp",
@@ -13469,6 +13409,33 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-26T09:39:04.383Z"
+    },
+    {
+      "slug": "mozilla-ai-mcpd-proxy",
+      "name": "mcpd proxy",
+      "tagline": "An MCP server that acts as a proxy between IDEs and the mcpd daemon, exposing all mcpd-managed MCP servers through a unified inte…",
+      "description": "An MCP server that acts as a proxy between IDEs and the mcpd daemon, exposing all mcpd-managed MCP servers through a unified interface.",
+      "author": "mozilla-ai",
+      "authorGithub": "mozilla-ai",
+      "repo": "https://github.com/mozilla-ai/mcpd-proxy",
+      "homepage": "https://glama.ai/mcp/servers/f3z2vwioos",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/mozilla-ai/mcpd-proxy#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "Apache 2.0",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.953Z"
     },
     {
       "slug": "mcpfinder-mcpfinder",
@@ -14079,34 +14046,6 @@
       "addedAt": "2026-05-29T09:39:28.899Z"
     },
     {
-      "slug": "minaprotocol-mina-mcp-server",
-      "name": "Mina MCP SERVER",
-      "tagline": "Exposes Mina blockchain data and operations through 40+ MCP tools, supporting live public networks, a local tutorial lightnet, an…",
-      "description": "Exposes Mina blockchain data and operations through 40+ MCP tools, supporting live public networks, a local tutorial lightnet, and archive snapshot analysis.",
-      "author": "MinaProtocol",
-      "authorGithub": "MinaProtocol",
-      "repo": "https://github.com/MinaProtocol/mina-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/x46mv6rp7h",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/MinaProtocol/mina-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "Apache 2.0",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.119Z"
-    },
-    {
       "slug": "opendatalab-mineru-document-explorer",
       "name": "MinerU Document Explorer",
       "tagline": "Enables AI agents to search, deep-read, and build knowledge bases from Markdown, PDF, DOCX, and PPTX documents via MCP tools for …",
@@ -14137,6 +14076,34 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:23.308Z"
+    },
+    {
+      "slug": "minimax-ai-minimax-search",
+      "name": "MiniMax Search MCP SERVER",
+      "tagline": "MCP server enabling parallel web search and batch browsing with intelligent content understanding via MiniMax LLM.",
+      "description": "MCP server enabling parallel web search and batch browsing with intelligent content understanding via MiniMax LLM.",
+      "author": "MiniMax-AI",
+      "authorGithub": "MiniMax-AI",
+      "repo": "https://github.com/MiniMax-AI/minimax_search",
+      "homepage": "https://glama.ai/mcp/servers/csf3l7i0wc",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "search",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/MiniMax-AI/minimax_search#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.952Z"
     },
     {
       "slug": "minuetai-minuet-mcp",
@@ -15120,33 +15087,6 @@
       "addedAt": "2026-05-29T09:39:51.620Z"
     },
     {
-      "slug": "nobrega-medtech-nobra-calculator",
-      "name": "Nobra Calculator MCP SERVER",
-      "tagline": "Provides over 300 medical calculator tools for AI assistants, supporting evidence-based medicine through modular API endpoints.",
-      "description": "Provides over 300 medical calculator tools for AI assistants, supporting evidence-based medicine through modular API endpoints.",
-      "author": "Nobrega-Medtech",
-      "authorGithub": "Nobrega-Medtech",
-      "repo": "https://github.com/Nobrega-Medtech/nobra_calculator",
-      "homepage": "https://glama.ai/mcp/servers/fglgkkkpg2",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/Nobrega-Medtech/nobra_calculator#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.118Z"
-    },
-    {
       "slug": "nod-protocol-nod-mcp-server",
       "name": "nod MCP SERVER",
       "tagline": "Enables AI agents to discover and interact with businesses by reading structured NOD manifests. Provides tools to look up busines…",
@@ -15827,33 +15767,6 @@
       "addedAt": "2026-05-29T09:39:29.059Z"
     },
     {
-      "slug": "okx-onchainos-skills",
-      "name": "onchainos MCP SERVER",
-      "tagline": "Enables on-chain operations including token search, market data, wallet management, swap execution, and DApp interactions across …",
-      "description": "Enables on-chain operations including token search, market data, wallet management, swap execution, and DApp interactions across 20+ blockchains.",
-      "author": "okx",
-      "authorGithub": "okx",
-      "repo": "https://github.com/okx/onchainos-skills",
-      "homepage": "https://glama.ai/mcp/servers/kwbjkcmykb",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/okx/onchainos-skills#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.947Z"
-    },
-    {
       "slug": "onion-ai-mcp-server",
       "name": "onion MCP SERVER",
       "tagline": "A feature-rich MCP server offering 30 tools across AI, code, text, data, web, and system categories, enabling tasks like chat, tr…",
@@ -15912,6 +15825,34 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:40:00.103Z"
+    },
+    {
+      "slug": "onplana-onplana-mcp-server",
+      "name": "Onplana MCP SERVER",
+      "tagline": "Open-source TypeScript MCP server template with Streamable HTTP transport, Bearer auth, and prompt-injection containment, plus a …",
+      "description": "Open-source TypeScript MCP server template with Streamable HTTP transport, Bearer auth, and prompt-injection containment, plus a client SDK for Onplana's hosted MCP endpoint.",
+      "author": "Onplana",
+      "authorGithub": "Onplana",
+      "repo": "https://github.com/Onplana/onplana-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/jbqkjdozx4",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/Onplana/onplana-mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.676Z"
     },
     {
       "slug": "ontolocy-ontolocy-mcp-server",
@@ -16002,34 +15943,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-26T09:39:06.028Z"
-    },
-    {
-      "slug": "opencagedata-opencage-geocoding-mcp",
-      "name": "opencage geocoding MCP",
-      "tagline": "Provides forward and reverse geocoding using the OpenCage API, enabling conversion between addresses and geographic coordinates.",
-      "description": "Provides forward and reverse geocoding using the OpenCage API, enabling conversion between addresses and geographic coordinates.",
-      "author": "OpenCageData",
-      "authorGithub": "OpenCageData",
-      "repo": "https://github.com/OpenCageData/opencage-geocoding-mcp",
-      "homepage": "https://glama.ai/mcp/servers/yuxfmb44jg",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/OpenCageData/opencage-geocoding-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.763Z"
     },
     {
       "slug": "karchinlab-oc-mcp",
@@ -16386,35 +16299,6 @@
       "addedAt": "2026-05-29T09:39:53.274Z"
     },
     {
-      "slug": "optimainetwork-optimai-search-mcp",
-      "name": "OptimAI Search MCP",
-      "tagline": "Enables Web3-focused web searches via the OptimAI External Search API, providing tools to start, retrieve, list, and cancel searc…",
-      "description": "Enables Web3-focused web searches via the OptimAI External Search API, providing tools to start, retrieve, list, and cancel searches from any MCP-compatible AI host.",
-      "author": "OptimaiNetwork",
-      "authorGithub": "OptimaiNetwork",
-      "repo": "https://github.com/OptimaiNetwork/optimai-search-mcp",
-      "homepage": "https://glama.ai/mcp/servers/fpwan81dz4",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/OptimaiNetwork/optimai-search-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "ISC",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.599Z"
-    },
-    {
       "slug": "orbiads-orbiads-gam-mcp",
       "name": "OrbiAds",
       "tagline": "173 tools to automate Google Ad Manager — campaigns, creatives, inventory, reporting via natural language",
@@ -16470,6 +16354,69 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:56.174Z"
+    },
+    {
+      "slug": "useorgx-orgx-mcp",
+      "name": "OrgX MCP",
+      "tagline": "Provides organizational memory for AI agents, enabling shared company memory, decision recall, artifact management, approval revi…",
+      "description": "Provides organizational memory for AI agents, enabling shared company memory, decision recall, artifact management, approval review, task delegation, and initiative tracking.",
+      "author": "useorgx",
+      "authorGithub": "useorgx",
+      "repo": "https://github.com/useorgx/orgx-mcp",
+      "homepage": "https://glama.ai/mcp/servers/m4dnfhbbru",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "memory",
+        "productivity",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "memory"
+      ],
+      "install": {
+        "cli": "# See https://github.com/useorgx/orgx-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.194Z"
+    },
+    {
+      "slug": "ourofoundation-ouro-mcp",
+      "name": "ouro MCP",
+      "tagline": "MCP server for the Ouro platform, enabling AI agents to search, read, query datasets, create content, and execute API routes on O…",
+      "description": "MCP server for the Ouro platform, enabling AI agents to search, read, query datasets, create content, and execute API routes on Ouro through the Model Context Protocol.",
+      "author": "ourofoundation",
+      "authorGithub": "ourofoundation",
+      "repo": "https://github.com/ourofoundation/ouro-mcp",
+      "homepage": "https://glama.ai/mcp/servers/ijh4qnyk9c",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "search",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/ourofoundation/ouro-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.676Z"
     },
     {
       "slug": "packrift-packrift-mcp",
@@ -16772,6 +16719,35 @@
       "authRequired": false,
       "source": "glama",
       "addedAt": "2026-05-29T09:39:22.946Z"
+    },
+    {
+      "slug": "payram-payram-mcp",
+      "name": "PayRam MCP SERVER",
+      "tagline": "Enables AI agents to deploy and operate a self-hosted, no-signup crypto payment gateway with multi-chain support, card-to-crypto …",
+      "description": "Enables AI agents to deploy and operate a self-hosted, no-signup crypto payment gateway with multi-chain support, card-to-crypto checkout, and MCP tools for payment links and integration snippets.",
+      "author": "PayRam",
+      "authorGithub": "PayRam",
+      "repo": "https://github.com/PayRam/payram-mcp",
+      "homepage": "https://glama.ai/mcp/servers/q2ojn63da8",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/PayRam/payram-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.414Z"
     },
     {
       "slug": "pdfcrowd-pdfcrowd-mcp-pdf-export",
@@ -17175,6 +17151,35 @@
       "addedAt": "2026-05-29T09:39:49.779Z"
     },
     {
+      "slug": "19pine-ai-pine-mcp-server",
+      "name": "Pine Assistant MCP SERVER",
+      "tagline": "A local MCP server that lets any LLM agent manage Pine AI tasks — negotiate bills, cancel subscriptions, resolve disputes, and ma…",
+      "description": "A local MCP server that lets any LLM agent manage Pine AI tasks — negotiate bills, cancel subscriptions, resolve disputes, and make phone calls on your behalf.",
+      "author": "19PINE-AI",
+      "authorGithub": "19PINE-AI",
+      "repo": "https://github.com/19PINE-AI/pine-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/p6am7rc1yc",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "productivity",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/19PINE-AI/pine-mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.953Z"
+    },
+    {
       "slug": "pipepie-pipepie",
       "name": "pipepie",
       "tagline": "Self-hosted webhook relay and tunnel with Noise NK encryption. Inspect requests, replay webhooks, trace AI pipelines, connect/dis…",
@@ -17380,34 +17385,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:49.940Z"
-    },
-    {
-      "slug": "plantos-sensor-mcp-server",
-      "name": "Plantos MCP SERVER",
-      "tagline": "Enables AI assistants to analyze farm locations, retrieve soil and weather data, access commodity market prices, and chat with an…",
-      "description": "Enables AI assistants to analyze farm locations, retrieve soil and weather data, access commodity market prices, and chat with an agricultural advisor for farming recommendations.",
-      "author": "Plantos-Sensor",
-      "authorGithub": "Plantos-Sensor",
-      "repo": "https://github.com/Plantos-Sensor/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/fgpxrvq2wf",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/Plantos-Sensor/mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.946Z"
     },
     {
       "slug": "plasmate-labs-plasmate-mcp",
@@ -17950,35 +17927,32 @@
       "addedAt": "2026-05-29T09:39:31.093Z"
     },
     {
-      "slug": "prospeo-v2-prospeo-mcp-server",
-      "name": "Prospeo MCP SERVER",
-      "tagline": "Enables AI tools to search and enrich B2B leads, including finding professional emails, company profiles, and filtering people an…",
-      "description": "Enables AI tools to search and enrich B2B leads, including finding professional emails, company profiles, and filtering people and companies by various criteria.",
-      "author": "prospeo-v2",
-      "authorGithub": "prospeo-v2",
-      "repo": "https://github.com/prospeo-v2/prospeo-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/mp8i8b1u1j",
+      "slug": "prosuite-prosuite-mcp",
+      "name": "prosuite MCP",
+      "tagline": "MCP server that exposes Dira ProSuite quality verification to AI assistants, enabling data quality checks on geospatial datasets …",
+      "description": "MCP server that exposes Dira ProSuite quality verification to AI assistants, enabling data quality checks on geospatial datasets through natural language.",
+      "author": "ProSuite",
+      "authorGithub": "ProSuite",
+      "repo": "https://github.com/ProSuite/prosuite-mcp",
+      "homepage": "https://glama.ai/mcp/servers/eh6laa4raa",
       "runtime": "unknown",
       "transports": [
         "http",
         "stdio"
       ],
       "categories": [
-        "filesystem",
-        "messaging",
-        "search",
         "ai"
       ],
       "tags": [],
       "install": {
-        "cli": "# See https://github.com/prospeo-v2/prospeo-mcp-server#readme for the canonical install command."
+        "cli": "# See https://github.com/ProSuite/prosuite-mcp#readme for the canonical install command."
       },
       "official": false,
       "verified": true,
-      "authRequired": true,
+      "authRequired": false,
       "license": "MIT",
       "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.311Z"
+      "addedAt": "2026-05-30T08:19:05.674Z"
     },
     {
       "slug": "redhat-cne-ptp-mcp-server",
@@ -18282,6 +18256,34 @@
       "addedAt": "2026-05-29T09:39:50.562Z"
     },
     {
+      "slug": "qase-tms-qase-mcp-server",
+      "name": "Qase MCP SERVER",
+      "tagline": "Official MCP server for Qase Test Management Platform. Enables AI assistants to manage test cases, test runs, defects, and other …",
+      "description": "Official MCP server for Qase Test Management Platform. Enables AI assistants to manage test cases, test runs, defects, and other Qase entities through natural language.",
+      "author": "qase-tms",
+      "authorGithub": "qase-tms",
+      "repo": "https://github.com/qase-tms/qase-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/qm02zxx3tq",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/qase-tms/qase-mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.191Z"
+    },
+    {
       "slug": "qdrant",
       "name": "Qdrant",
       "tagline": "Vector search over a Qdrant collection.",
@@ -18321,6 +18323,33 @@
       "source": "manual",
       "addedAt": "2025-03-12T00:00:00Z",
       "lastUpdated": "2026-04-06T00:00:00Z"
+    },
+    {
+      "slug": "qdrant-mcp-for-docs",
+      "name": "Qdrant Docs MCP SERVER",
+      "tagline": "A read-only MCP server providing curated Qdrant documentation for LLMs, enabling retrieval of the latest and most accurate docume…",
+      "description": "A read-only MCP server providing curated Qdrant documentation for LLMs, enabling retrieval of the latest and most accurate documentation.",
+      "author": "qdrant",
+      "authorGithub": "qdrant",
+      "repo": "https://github.com/qdrant/mcp-for-docs",
+      "homepage": "https://glama.ai/mcp/servers/vgtjwfmrlo",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "knowledge",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/qdrant/mcp-for-docs#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.192Z"
     },
     {
       "slug": "intuit-quickbooks-online-mcp-server",
@@ -19105,6 +19134,37 @@
       "addedAt": "2026-05-28T09:49:22.143Z"
     },
     {
+      "slug": "riocloud-riocloud-reader",
+      "name": "riocloud reader",
+      "tagline": "Enables AI agents to fetch and digest content from 30+ platforms (Twitter, YouTube, Reddit, etc.) via a unified API. Supports mul…",
+      "description": "Enables AI agents to fetch and digest content from 30+ platforms (Twitter, YouTube, Reddit, etc.) via a unified API. Supports multi-format output, transcription, and direct Obsidian sync.",
+      "author": "Riocloud",
+      "authorGithub": "Riocloud",
+      "repo": "https://github.com/Riocloud/riocloud-reader",
+      "homepage": "https://glama.ai/mcp/servers/k5d0s1uhr6",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "knowledge",
+        "video",
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/Riocloud/riocloud-reader#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "BSD 2-Clause \"Simplified\"",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.672Z"
+    },
+    {
       "slug": "rize-io-mcp-server",
       "name": "rize MCP SERVER",
       "tagline": "MCP server for Rize -- automatic time tracking for professionals and teams. 27 tools for managing projects, clients, tasks, sessi…",
@@ -19458,6 +19518,34 @@
       "addedAt": "2026-05-29T09:39:23.118Z"
     },
     {
+      "slug": "runframe-runframe-mcp-server",
+      "name": "runframe MCP SERVER",
+      "tagline": "Enables managing incident response workflows including incidents, on-call, postmortems, and more through the Runframe platform us…",
+      "description": "Enables managing incident response workflows including incidents, on-call, postmortems, and more through the Runframe platform using MCP tools.",
+      "author": "runframe",
+      "authorGithub": "runframe",
+      "repo": "https://github.com/runframe/runframe-mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/tbyqhzv3cs",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/runframe/runframe-mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.951Z"
+    },
+    {
       "slug": "runpod-runpod-mcp",
       "name": "RunPod MCP SERVER",
       "tagline": "Enables interaction with the RunPod REST API through Claude or other MCP-compatible clients, providing tools for managing pods, e…",
@@ -19722,35 +19810,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-27T09:32:25.576Z"
-    },
-    {
-      "slug": "scopecraft-command",
-      "name": "Scopecraft Command",
-      "tagline": "MCP server for managing Markdown-Driven Task Management (MDTM) files with task, parent task, environment, and workflow management…",
-      "description": "MCP server for managing Markdown-Driven Task Management (MDTM) files with task, parent task, environment, and workflow management, enabling structured development workflows.",
-      "author": "scopecraft",
-      "authorGithub": "scopecraft",
-      "repo": "https://github.com/scopecraft/command",
-      "homepage": "https://glama.ai/mcp/servers/v7ts7bvxmc",
-      "runtime": "unknown",
-      "transports": [
-        "stdio"
-      ],
-      "categories": [
-        "filesystem",
-        "productivity",
-        "storage"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/scopecraft/command#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.118Z"
     },
     {
       "slug": "scrapelab-mcp",
@@ -20091,6 +20150,35 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-15T08:40:51.755Z"
+    },
+    {
+      "slug": "shiliu-ai-shiliu-mcp",
+      "name": "ShiLiu MCP SERVER",
+      "tagline": "Enables digital human (avatar) creation, voice cloning, and video generation through ShiLiu API, compatible with any MCP client.",
+      "description": "Enables digital human (avatar) creation, voice cloning, and video generation through ShiLiu API, compatible with any MCP client.",
+      "author": "shiliu-ai",
+      "authorGithub": "shiliu-ai",
+      "repo": "https://github.com/shiliu-ai/ShiLiu-MCP",
+      "homepage": "https://glama.ai/mcp/servers/kkh02oyat0",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "version-control",
+        "video",
+        "voice"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/shiliu-ai/ShiLiu-MCP#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.676Z"
     },
     {
       "slug": "shoptera-ai-shoptera-product-intelligence",
@@ -20483,35 +20571,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-28T09:49:22.638Z"
-    },
-    {
-      "slug": "smartbear-smartbear-mcp",
-      "name": "SmartBear MCP SERVER",
-      "tagline": "Enables AI assistants to interact with SmartBear's suite of testing and monitoring tools including BugSnag, Swagger, Reflect, and…",
-      "description": "Enables AI assistants to interact with SmartBear's suite of testing and monitoring tools including BugSnag, Swagger, Reflect, and more through natural language, allowing querying of testing data, analysis of performance metrics, and management of test automation.",
-      "author": "SmartBear",
-      "authorGithub": "SmartBear",
-      "repo": "https://github.com/SmartBear/smartbear-mcp",
-      "homepage": "https://glama.ai/mcp/servers/jhtk4i1b8g",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "monitoring",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/SmartBear/smartbear-mcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.948Z"
     },
     {
       "slug": "clharman-circuit-mcp",
@@ -20908,33 +20967,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:56.727Z"
-    },
-    {
-      "slug": "ssojet-remote-mcp-ssojet",
-      "name": "SSOJet MCP SERVER",
-      "tagline": "An MCP server that authenticates users via SSOJet and provides tools such as adding two numbers. Enables secure access to tools a…",
-      "description": "An MCP server that authenticates users via SSOJet and provides tools such as adding two numbers. Enables secure access to tools after OIDC authentication.",
-      "author": "ssojet",
-      "authorGithub": "ssojet",
-      "repo": "https://github.com/ssojet/remote-mcp-ssojet",
-      "homepage": "https://glama.ai/mcp/servers/xmr67za00r",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/ssojet/remote-mcp-ssojet#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.948Z"
     },
     {
       "slug": "staruml-staruml-mcp-server",
@@ -21614,6 +21646,34 @@
       "addedAt": "2026-05-28T09:49:27.142Z"
     },
     {
+      "slug": "swiftlens-swiftlens",
+      "name": "SwiftLens",
+      "tagline": "MCP server that provides semantic-level analysis of Swift codebases to AI agents by integrating with Apple's SourceKit-LSP, enabl…",
+      "description": "MCP server that provides semantic-level analysis of Swift codebases to AI agents by integrating with Apple's SourceKit-LSP, enabling compiler-grade code understanding and cross-file navigation.",
+      "author": "swiftlens",
+      "authorGithub": "swiftlens",
+      "repo": "https://github.com/swiftlens/swiftlens",
+      "homepage": "https://glama.ai/mcp/servers/aix0d264a4",
+      "runtime": "unknown",
+      "transports": [
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/swiftlens/swiftlens#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.194Z"
+    },
+    {
       "slug": "synapbus-synapbus",
       "name": "SynapBus",
       "tagline": "MCP-native agent-to-agent messaging hub for AI swarms. Agents communicate via channels and DMs through MCP protocol — zero SDKs n…",
@@ -22262,34 +22322,6 @@
       "addedAt": "2026-05-29T09:39:55.294Z"
     },
     {
-      "slug": "grab-tinymcp",
-      "name": "TinyMCP",
-      "tagline": "A lightweight MCP router for FastAPI that enables adding MCP tools to FastAPI applications with ease.",
-      "description": "A lightweight MCP router for FastAPI that enables adding MCP tools to FastAPI applications with ease.",
-      "author": "grab",
-      "authorGithub": "grab",
-      "repo": "https://github.com/grab/tinymcp",
-      "homepage": "https://glama.ai/mcp/servers/phcrhqcs7j",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/grab/tinymcp#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.764Z"
-    },
-    {
       "slug": "tipdotmd-tip-md-x402-mcp-server",
       "name": "tip.md x402 + CDP MCP SERVER",
       "tagline": "Enables any AI agent to send cryptocurrency tips via x402 payment collection and automatic CDP disbursement, turning agents into …",
@@ -22441,6 +22473,36 @@
       "addedAt": "2026-05-29T09:39:49.437Z"
     },
     {
+      "slug": "townshipamerica-python-mcp",
+      "name": "townshipamerica MCP",
+      "tagline": "MCP server for converting PLSS legal descriptions to GPS coordinates and vice versa, enabling AI agents to work with U.S. Public …",
+      "description": "MCP server for converting PLSS legal descriptions to GPS coordinates and vice versa, enabling AI agents to work with U.S. Public Land Survey System data.",
+      "author": "townshipamerica",
+      "authorGithub": "townshipamerica",
+      "repo": "https://github.com/townshipamerica/python-mcp",
+      "homepage": "https://glama.ai/mcp/servers/ctorfd7ew6",
+      "runtime": "python",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "agents"
+      ],
+      "install": {
+        "cli": "# See https://github.com/townshipamerica/python-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.193Z"
+    },
+    {
       "slug": "trackingtime-mcp",
       "name": "TrackingTime MCP",
       "tagline": "Connects AI assistants to TrackingTime for querying time entries, projects, tasks, customers, and team data using natural languag…",
@@ -22525,35 +22587,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:47.586Z"
-    },
-    {
-      "slug": "traylinx-traylinx-search-engine-mcp-server",
-      "name": "traylinx search engine MCP SERVER",
-      "tagline": "Enables MCP clients to perform intelligent web searches via Traylinx's Agentic Search API, returning text summaries and structure…",
-      "description": "Enables MCP clients to perform intelligent web searches via Traylinx's Agentic Search API, returning text summaries and structured data like HTML, images, and news.",
-      "author": "traylinx",
-      "authorGithub": "traylinx",
-      "repo": "https://github.com/traylinx/traylinx-search-engine-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/ihhlp1r5fm",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "search",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/traylinx/traylinx-search-engine-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.946Z"
     },
     {
       "slug": "trekmail-mcp-server",
@@ -22944,6 +22977,35 @@
       "addedAt": "2026-05-29T09:40:02.820Z"
     },
     {
+      "slug": "vast-data-vast-admin-mcp",
+      "name": "VAST Admin MCP SERVER",
+      "tagline": "MCP server for VAST Data administration, enabling AI assistants to monitor, list, and manage VAST clusters.",
+      "description": "MCP server for VAST Data administration, enabling AI assistants to monitor, list, and manage VAST clusters.",
+      "author": "vast-data",
+      "authorGithub": "vast-data",
+      "repo": "https://github.com/vast-data/vast-admin-mcp",
+      "homepage": "https://glama.ai/mcp/servers/xihgz3hwaj",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "monitoring",
+        "ai"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/vast-data/vast-admin-mcp#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "Apache 2.0",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.415Z"
+    },
+    {
       "slug": "verifiedhumancert-verified-human-mcp-server",
       "name": "Verified Human MCP SERVER",
       "tagline": "Enables querying the Verified Human Cert registry to verify human-made music certifications by ISRC, artist, track, or cert numbe…",
@@ -23035,6 +23097,34 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-15T08:40:45.115Z"
+    },
+    {
+      "slug": "veryfi-mcp-server",
+      "name": "veryfi MCP SERVER",
+      "tagline": "Integrates Veryfi for document processing, enabling data extraction from documents via the Model Context Protocol.",
+      "description": "Integrates Veryfi for document processing, enabling data extraction from documents via the Model Context Protocol.",
+      "author": "veryfi",
+      "authorGithub": "veryfi",
+      "repo": "https://github.com/veryfi/mcp-server",
+      "homepage": "https://glama.ai/mcp/servers/dux5elzxdu",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/veryfi/mcp-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:06.193Z"
     },
     {
       "slug": "getvexi-mcp",
@@ -23367,33 +23457,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:51.619Z"
-    },
-    {
-      "slug": "wavespeedai-mcp-server",
-      "name": "WavespeedMCP",
-      "tagline": "Provides a standardized interface for accessing WaveSpeed's image and video generation capabilities through the MCP protocol.",
-      "description": "Provides a standardized interface for accessing WaveSpeed's image and video generation capabilities through the MCP protocol.",
-      "author": "WaveSpeedAI",
-      "authorGithub": "WaveSpeedAI",
-      "repo": "https://github.com/WaveSpeedAI/mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/jup3vi7m7i",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "video"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/WaveSpeedAI/mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.117Z"
     },
     {
       "slug": "wavix-wavix-mcp-server",
@@ -23819,6 +23882,38 @@
       "addedAt": "2026-05-27T09:32:25.131Z"
     },
     {
+      "slug": "yantrikos-yantrikdb-server",
+      "name": "yantrikdb MCP",
+      "tagline": "MCP server providing cognitive memory tools (remember, recall, think, etc.) for AI agents, enabling forgetting, consolidation, an…",
+      "description": "MCP server providing cognitive memory tools (remember, recall, think, etc.) for AI agents, enabling forgetting, consolidation, and contradiction detection.",
+      "author": "yantrikos",
+      "authorGithub": "yantrikos",
+      "repo": "https://github.com/yantrikos/yantrikdb-server",
+      "homepage": "https://glama.ai/mcp/servers/a7t85trq0x",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "memory",
+        "ai"
+      ],
+      "tags": [
+        "agents",
+        "memory"
+      ],
+      "install": {
+        "cli": "# See https://github.com/yantrikos/yantrikdb-server#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "AGPL 3.0",
+      "source": "glama",
+      "addedAt": "2026-05-30T08:19:05.674Z"
+    },
+    {
       "slug": "yeshello-app-mcp",
       "name": "YesHello",
       "tagline": "Digital business cards, lead capture forms, and service listings - built and managed by AI. 63 tools with live browser editing, s…",
@@ -23971,34 +24066,6 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:52.922Z"
-    },
-    {
-      "slug": "zentricprotocol-zentricprotocol",
-      "name": "zentric protocol MCP",
-      "tagline": "Security middleware for LLM apps and AI agent pipelines. Detects prompt injection attacks (22 signatures, 7 languages) and anonym…",
-      "description": "Security middleware for LLM apps and AI agent pipelines. Detects prompt injection attacks (22 signatures, 7 languages) and anonymizes PII (17 entity types). Deterministic, sub-25ms, GDPR Art.30 compliant.",
-      "author": "ZentricProtocol",
-      "authorGithub": "ZentricProtocol",
-      "repo": "https://github.com/ZentricProtocol/zentricprotocol",
-      "homepage": "https://glama.ai/mcp/servers/bzxknu9b24",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "security",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/ZentricProtocol/zentricprotocol#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": true,
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:23.118Z"
     },
     {
       "slug": "zeplin-mcp-server",
@@ -24183,36 +24250,6 @@
       "license": "Apache 2.0",
       "source": "glama",
       "addedAt": "2026-05-29T09:39:53.091Z"
-    },
-    {
-      "slug": "zstackio-zstack-mcp-server",
-      "name": "ZStack MCP SERVER",
-      "tagline": "Enables AI to dynamically search, describe, and execute 2000+ ZStack Cloud APIs, plus query monitoring metrics and data.",
-      "description": "Enables AI to dynamically search, describe, and execute 2000+ ZStack Cloud APIs, plus query monitoring metrics and data.",
-      "author": "zstackio",
-      "authorGithub": "zstackio",
-      "repo": "https://github.com/zstackio/zstack-mcp-server",
-      "homepage": "https://glama.ai/mcp/servers/kksbf5k3d3",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "monitoring",
-        "search",
-        "ai"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/zstackio/zstack-mcp-server#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-05-29T09:39:22.947Z"
     },
     {
       "slug": "zimsoft-webprinter-mcp",
