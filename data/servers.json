@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T11:50:59.240Z",
+  "generatedAt": "2026-06-16T10:57:19.951Z",
   "totalCount": 800,
   "servers": [
     {
@@ -8873,34 +8873,6 @@
       "addedAt": "2026-06-11T10:11:09.536Z"
     },
     {
-      "slug": "emblemcompany-agent-skills",
-      "name": "Emblem AI",
-      "tagline": "Emblem Vault AI. Get a cross-chain wallet out of the box and do everything crypto with our terminal! Token discovery, swaps, cros…",
-      "description": "Emblem Vault AI.\n\nGet a cross-chain wallet out of the box and do everything crypto with our terminal!\n\nToken discovery, swaps, cross-chain bridges, NFTs, prediction markets...",
-      "author": "EmblemCompany",
-      "authorGithub": "EmblemCompany",
-      "repo": "https://github.com/EmblemCompany/Agent-skills",
-      "homepage": "https://glama.ai/mcp/servers/njg8prgtju",
-      "runtime": "unknown",
-      "transports": [
-        "http",
-        "stdio"
-      ],
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "install": {
-        "cli": "# See https://github.com/EmblemCompany/Agent-skills#readme for the canonical install command."
-      },
-      "official": false,
-      "verified": true,
-      "authRequired": false,
-      "license": "MIT",
-      "source": "glama",
-      "addedAt": "2026-06-15T11:50:26.587Z"
-    },
-    {
       "slug": "emblemcompany-emblemai-agentwallet",
       "name": "Emblem AI",
       "tagline": "Emblem Vault AI. Get a multi chain wallet by using the server. Do everything crypto. Swaps, NFTs, Cross-chain bridges, Bitcoin as…",
@@ -8927,6 +8899,34 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-06-15T11:50:26.588Z"
+    },
+    {
+      "slug": "emblemcompany-agent-skills",
+      "name": "Emblem AI",
+      "tagline": "Emblem Vault AI. Get a cross-chain wallet out of the box and do everything crypto with our terminal! Token discovery, swaps, cros…",
+      "description": "Emblem Vault AI.\n\nGet a cross-chain wallet out of the box and do everything crypto with our terminal!\n\nToken discovery, swaps, cross-chain bridges, NFTs, prediction markets...",
+      "author": "EmblemCompany",
+      "authorGithub": "EmblemCompany",
+      "repo": "https://github.com/EmblemCompany/Agent-skills",
+      "homepage": "https://glama.ai/mcp/servers/njg8prgtju",
+      "runtime": "unknown",
+      "transports": [
+        "http",
+        "stdio"
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "install": {
+        "cli": "# See https://github.com/EmblemCompany/Agent-skills#readme for the canonical install command."
+      },
+      "official": false,
+      "verified": true,
+      "authRequired": false,
+      "license": "MIT",
+      "source": "glama",
+      "addedAt": "2026-06-15T11:50:26.587Z"
     },
     {
       "slug": "emiliaprotocol-emilia-protocol",
