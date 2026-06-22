@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-06-22T11:39:14.247Z",
-  "totalCount": 800,
+  "totalCount": 801,
   "servers": [
     {
       "slug": "aws-kb-retrieval",
@@ -24822,6 +24822,52 @@
       "source": "manual",
       "addedAt": "2025-03-08T00:00:00Z",
       "lastUpdated": "2026-04-03T00:00:00Z"
+    },
+    {
+      "slug": "xquik",
+      "name": "Xquik",
+      "tagline": "Search X/Twitter data, export followers, monitor accounts, and use Xquik API calls.",
+      "description": "Remote MCP server for Xquik X/Twitter workflows, including tweet search, profile timelines, follower exports, media workflows, webhooks, SDK-backed API access, and authenticated API calls. Requires a Xquik API key.",
+      "author": "Xquik-dev",
+      "authorGithub": "Xquik-dev",
+      "repo": "https://github.com/Xquik-dev/x-twitter-scraper",
+      "homepage": "https://docs.xquik.com/mcp/overview",
+      "runtime": "unknown",
+      "transports": [
+        "http"
+      ],
+      "categories": [
+        "search",
+        "research",
+        "productivity"
+      ],
+      "tags": [
+        "x",
+        "twitter",
+        "tweets",
+        "tweet-search",
+        "followers",
+        "webhooks",
+        "remote"
+      ],
+      "install": {
+        "cli": "Use the remote MCP endpoint https://xquik.com/mcp with Authorization: Bearer {XQUIK_API_KEY}. See https://docs.xquik.com/mcp/overview."
+      },
+      "tools": [
+        {
+          "name": "explore",
+          "description": "Search the Xquik API endpoint catalog."
+        },
+        {
+          "name": "xquik",
+          "description": "Execute authenticated Xquik API calls."
+        }
+      ],
+      "authRequired": true,
+      "license": "Apache-2.0",
+      "source": "community",
+      "addedAt": "2026-05-09T00:00:00Z",
+      "lastUpdated": "2026-05-08T23:20:52Z"
     }
   ]
 }
