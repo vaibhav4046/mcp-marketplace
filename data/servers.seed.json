@@ -1317,6 +1317,55 @@
       "lastUpdated": "2026-04-05T00:00:00Z"
     },
     {
+      "slug": "xquik",
+      "name": "Xquik",
+      "tagline": "Search public X data, export followers, monitor accounts, and call documented Xquik APIs.",
+      "description": "Remote MCP server for structured X workflows. It provides endpoint discovery and authenticated API calls for search, public timelines, follower exports, media, monitoring, and approval-gated account actions.",
+      "author": "Xquik-dev",
+      "authorGithub": "Xquik-dev",
+      "repo": "https://github.com/Xquik-dev/x-twitter-scraper",
+      "homepage": "https://docs.xquik.com/mcp/overview",
+      "runtime": "unknown",
+      "transports": [
+        "http"
+      ],
+      "categories": [
+        "search",
+        "research",
+        "productivity"
+      ],
+      "tags": [
+        "x",
+        "twitter",
+        "tweet-search",
+        "followers",
+        "monitoring",
+        "webhooks",
+        "remote"
+      ],
+      "install": {
+        "cli": "Use https://xquik.com/mcp with Authorization: Bearer {XQUIK_API_KEY}. See https://docs.xquik.com/mcp/overview."
+      },
+      "tools": [
+        {
+          "name": "explore",
+          "description": "Search the Xquik API endpoint catalog."
+        },
+        {
+          "name": "xquik",
+          "description": "Execute an authenticated Xquik API call."
+        }
+      ],
+      "stars": 183,
+      "official": false,
+      "verified": false,
+      "authRequired": true,
+      "license": "MIT",
+      "source": "manual",
+      "addedAt": "2026-05-09T00:00:00Z",
+      "lastUpdated": "2026-08-18T00:00:00Z"
+    },
+    {
       "slug": "youtube-transcript",
       "name": "YouTube Transcript",
       "tagline": "Pull transcripts and metadata from YouTube videos.",
