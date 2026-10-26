@@ -24589,6 +24589,61 @@
       "source": "manual",
       "addedAt": "2025-03-08T00:00:00Z",
       "lastUpdated": "2026-04-03T00:00:00Z"
+    },
+    {
+      "slug": "movahedi-privacy-api",
+      "name": "Movahedi Privacy API",
+      "tagline": "Free read-only Canadian privacy law data: enforcement actions, glossary, Law 25 checklist.",
+      "description": "Remote MCP server (Streamable HTTP, anonymous, no auth) exposing verified Canadian privacy enforcement actions (CAI and OPC), a 263-term plain-language privacy glossary, and an 11-point Quebec Law 25 readiness checklist. Free quota: 2,000 calls/day anonymous, 10,000/day with a free API key. REST API at https://movahedi.ca/api/v1.",
+      "author": "movahedi-ca",
+      "authorGithub": "movahedi-ca",
+      "repo": "https://github.com/movahedi-ca/movahedi-ca",
+      "homepage": "https://movahedi.ca/developers",
+      "runtime": "unknown",
+      "transports": [
+        "http"
+      ],
+      "categories": [
+        "knowledge",
+        "research",
+        "security"
+      ],
+      "tags": [
+        "privacy",
+        "law25",
+        "canada",
+        "glossary",
+        "enforcement",
+        "compliance"
+      ],
+      "install": {
+        "claudeCode": "claude mcp add --transport http movahedi-privacy https://movahedi.ca/mcp"
+      },
+      "tools": [
+        {
+          "name": "privacy_search_enforcement_actions",
+          "description": "Find cases by keyword, regulator, or year"
+        },
+        {
+          "name": "privacy_get_enforcement_case",
+          "description": "Full record for one case ID"
+        },
+        {
+          "name": "privacy_lookup_glossary_term",
+          "description": "Definition for one term slug"
+        },
+        {
+          "name": "privacy_list_glossary_terms",
+          "description": "Browse or search the glossary, paginated"
+        },
+        {
+          "name": "privacy_law25_requirements",
+          "description": "The Law 25 checklist, optionally by category"
+        }
+      ],
+      "authRequired": false,
+      "source": "manual",
+      "addedAt": "2026-09-24T02:51:35Z"
     }
   ]
 }
