@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-12T14:21:20.562Z",
-  "totalCount": 800,
+  "totalCount": 801,
   "servers": [
     {
       "slug": "aws-kb-retrieval",
@@ -24474,6 +24474,69 @@
       "source": "manual",
       "addedAt": "2025-02-28T00:00:00Z",
       "lastUpdated": "2026-04-05T00:00:00Z"
+    },
+    {
+      "slug": "excession-labs-cve-intelligence",
+      "name": "Excession Labs CVE intelligence",
+      "tagline": "Search CVEs, source software/version evidence, CISA KEV and dated FIRST EPSS.",
+      "description": "Free hosted CVE intelligence with six read-only tools over Streamable HTTP: search records, read details, inspect source coverage and collector health, and page through hosted revisions and changes. No account or API key required. Software/version filters match source assertions; they do not evaluate installed-version applicability. Hosted history begins at the cutover date shown by the service. The linked repository contains public documentation and tool schemas; the hosted implementation is maintained separately.",
+      "author": "Excession Labs",
+      "authorGithub": "Excession-Labs",
+      "repo": "https://github.com/Excession-Labs/mcp-servers",
+      "homepage": "https://excessionlabs.ai/cve-intelligence/",
+      "runtime": "unknown",
+      "transports": [
+        "http"
+      ],
+      "categories": [
+        "security",
+        "research",
+        "developer-tools"
+      ],
+      "tags": [
+        "cve",
+        "vulnerability-intelligence",
+        "cisa-kev",
+        "epss",
+        "streamable-http",
+        "read-only",
+        "no-auth"
+      ],
+      "install": {
+        "claudeCode": "claude mcp add --transport http excession-cve https://excessionlabs.ai/mcp/cve"
+      },
+      "tools": [
+        {
+          "name": "cve_search",
+          "description": "Search indexed CVEs and exact source software/version assertions."
+        },
+        {
+          "name": "cve_get",
+          "description": "Read a CVE with source evidence, severity, available KEV and dated EPSS."
+        },
+        {
+          "name": "cve_history",
+          "description": "Page through normalized source revisions since hosted monitoring began."
+        },
+        {
+          "name": "cve_status",
+          "description": "Read counts, source coverage, collector checkpoints, errors and backlog."
+        },
+        {
+          "name": "cve_sources",
+          "description": "Read source attribution and coverage limits."
+        },
+        {
+          "name": "cve_changes",
+          "description": "Read hosted observations and later changes after a saved cursor."
+        }
+      ],
+      "official": false,
+      "verified": false,
+      "authRequired": false,
+      "addedAt": "2026-11-12T15:00:00.000Z",
+      "source": "manual",
+      "logo": "https://excessionlabs.ai/icon-512.png"
     },
     {
       "slug": "kubernetes",
