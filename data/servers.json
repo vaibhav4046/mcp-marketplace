@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-26T16:05:39.144Z",
-  "totalCount": 800,
+  "totalCount": 801,
   "servers": [
     {
       "slug": "aws-kb-retrieval",
@@ -10422,6 +10422,40 @@
       "license": "MIT",
       "source": "glama",
       "addedAt": "2026-08-25T06:31:54.732Z"
+    },
+    {
+      "slug": "govisit-tools",
+      "name": "GoVisit Tools",
+      "tagline": "Search GoVisit places and destinations, and read public travel and developer content.",
+      "description": "GoVisit's hosted, read-only MCP server for searching destinations and places and retrieving published page content, sections, FAQs, visit facts, and statistics. Connect over Streamable HTTP at https://govisit.ai/mcp. MCP documentation: https://govisit.ai/en/docs/developers/mcp/overview. Agent Skills documentation: https://govisit.ai/en/docs/developers/agent-skills/overview. The linked public GitHub repository is GoVisit's Agent Skills and integration toolkit, not the server implementation.",
+      "author": "InHotel",
+      "authorGithub": "inhotel-io",
+      "repo": "https://github.com/inhotel-io/govisit-toolkit",
+      "homepage": "https://govisit.ai/en/docs/developers/mcp/overview",
+      "runtime": "unknown",
+      "transports": [
+        "http"
+      ],
+      "categories": [
+        "search",
+        "knowledge",
+        "other"
+      ],
+      "tags": [
+        "travel",
+        "tourism",
+        "places",
+        "destinations",
+        "agent-skills"
+      ],
+      "install": {
+        "claudeCode": "claude mcp add --transport http govisit-tools https://govisit.ai/mcp"
+      },
+      "official": false,
+      "verified": false,
+      "authRequired": false,
+      "source": "community",
+      "addedAt": "2026-11-26T18:49:05Z"
     },
     {
       "slug": "gribstream-gribstream-mcp",
